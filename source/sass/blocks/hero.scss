@@ -1,7 +1,11 @@
 .hero {
-  position: absolute;
-  top: 0;
+  margin-top: -102px;
   width: 100%;
+  margin-bottom: 100px;
+
+  @include vp-1199 {
+    margin-bottom: 70px;
+  }
 }
 
 .hero__slider {
@@ -62,14 +66,16 @@
 
 .hero__inner {
   position: relative;
-  padding: 0 120px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 120px;
+
+  @include vp-1279 {
+    padding: 0 20px;
+  }
 
   @include vp-1199 {
     display: flex;
@@ -88,9 +94,6 @@
   margin-top: 182px;
   display: flex;
   flex-direction: column;
-  // min-width: 767px;
-  // width: 100%;
-  // max-width: 958px;
 
   @include vp-1199 {
     margin-top: 174px;
@@ -120,7 +123,7 @@
   max-width: 958px;
 
   @include vp-1199 {
-    font-size: $fs-xlarge;
+    font-size: $fz-xlarge;
     line-height: $lh-xlarge;
     text-align: center;
     min-width: 700px;
@@ -183,7 +186,9 @@
   }
 
   @include vp-767 {
+    min-height: 52px;
     width: 180px;
+    padding: 17px 19px;
   }
 
   @include hover-focus {
@@ -206,13 +211,16 @@
 .hero__media {
   position: absolute;
   top: 301px;
-  right: 120px;
   z-index: 0;
+  right: 0;
+
+  @include vp-1279 {
+    right: 20px;
+  }
 
   @include vp-1199 {
     position: relative;
     top: 0;
-    right: 0;
   }
 
   @include vp-767 {
@@ -225,14 +233,14 @@
   cursor: pointer;
   min-width: 482px;
   min-height: 317px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 
   @include vp-1199 {
-    min-width: auto;
-    min-height: auto;
-    width: 442px;
-    height: 300px;
+    min-width: 442px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -292,10 +300,6 @@
   }
 }
 
-.hero__media[data-video="is-enabled"] button {
-  display: block;
-}
-
 .hero__media-button svg {
   position: absolute;
   transform: translateX(-25%) translateY(-50%);
@@ -331,15 +335,15 @@
 }
 
 .hero__media--altai {
-    width: 340px;
-    height: 200px;
+  width: 340px;
+  height: 220px;
 
-    & .hero__media-wrapper {
-      min-width: auto;
-      min-height: auto;
-      width: 340px;
-      height: 220px;
-    }
+  & .hero__media-wrapper {
+    min-width: 340px;
+    min-height: 220px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .hero__subcontent {
@@ -391,15 +395,18 @@
 
 .hero__slider .hero__control {
   position: absolute;
-  padding: 0 120px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   right: 0;
   bottom: 10.75%;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
   column-gap: 15px;
+
+  @include vp-1279 {
+    padding: 0 20px;
+  }
 
   @include vp-1199 {
     justify-content: center;

@@ -11,7 +11,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/512.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="./manifest.webmanifest">
 
   <link rel="preload" href="./fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 <body>
   <div class="wrapper">
     <header class="main-header" id="top" data-header="data-header">
-      <div class="container main-header__container" >
+      <div class="main-header__container container">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="#top" aria-label="Логотип сайта LifeTour.">
             <svg width="205" height="62" aria-hidden="true">
@@ -106,21 +106,19 @@
                   <a class="hero__button" href="#">Смотреть тур</a>
                 </div>
                 <div class="hero__media" data-video="is-enabled">
-                  <div class="hero__media-wrapper">
-                    <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" rel="noopener noreferrer">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_1/hero-video-desk.webp 1x, ./img/hero/slide_1/hero-video-desk@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)"
-                          srcset="./img/hero/slide_1/hero-video-tablet.webp 1x, ./img/hero/slide_1/hero-video-tablet@2x.webp 2x">
-                        <source media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_1/hero-video-desk.jpg 1x, ./img/hero/slide_1/hero-video-desk@2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                          srcset="./img/hero/slide_1/hero-video-tablet.jpg 1x, ./img/hero/slide_1/hero-video-tablet@2x.jpg 2x">
-                        <img src="./img/hero/slide_1/hero-video-desk.jpg" alt="Видео-презентация туров" width="482"
-                          height="317" loading="lazy">
-                      </picture>
-                    </a>
+                  <div class="hero__media-wrapper video">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_1/hero-video-desk.webp 1x, ./img/hero/slide_1/hero-video-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/hero/slide_1/hero-video-tablet.webp 1x, ./img/hero/slide_1/hero-video-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_1/hero-video-desk.jpg 1x, ./img/hero/slide_1/hero-video-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/hero/slide_1/hero-video-tablet.jpg 1x, ./img/hero/slide_1/hero-video-tablet@2x.jpg 2x">
+                      <img src="./img/hero/slide_1/hero-video-desk.jpg" alt="Видео-презентация туров" width="482"
+                        height="317" loading="lazy">
+                    </picture>
                     <button class="hero__media-button" type="button" aria-label="play">
                       <svg width="12" height="22" aria-hidden="true">
                         <use xlink:href="./img/sprite.svg#icon-play"></use>
@@ -133,13 +131,13 @@
                     <svg width="12" height="12" aria-hidden="true">
                       <use xlink:href="./img/sprite.svg#icon-moon"></use>
                     </svg>
-                  <p>6 дней/5 ночей</p>
+                    <p>6 дней/5 ночей</p>
                   </li>
                   <li class="hero__level">
                     <svg width="12" height="12" aria-hidden="true">
                       <use xlink:href="./img/sprite.svg#icon-level"></use>
                     </svg>
-                  <p>Высокая сложность</p>
+                    <p>Высокая сложность</p>
                   </li>
                 </ul>
               </div>
@@ -159,7 +157,7 @@
                     srcset="./img/hero/slide_2/hero-bg-slide2-desk.jpg 1x, ./img/hero/slide_2/hero-bg-slide2-desk@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="./img/hero/slide_2/hero-bg-slide2-tablet.jpg 1x, ./img/hero/slide_2/hero-bg-slide2-tablet@2x.jpg 2x">
-                    <source media="(min-width: 320px)"
+                  <source media="(min-width: 320px)"
                     srcset="./img/hero/slide_2/hero-bg-slide2-mobile.jpg 1x, ./img/hero/slide_2/hero-bg-slide2-mobile@2x.jpg 2x">
 
                   <img src="./img/hero/slide_2/hero-bg-slide2-desk.jpg" alt="Фотография гор Камчатки" width="1440"
@@ -175,20 +173,18 @@
                 </div>
                 <div class="hero__media hero__media--kamchatka">
                   <div class="hero__media-wrapper">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_2/hero-photo-cards-desk.webp 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)"
-                          srcset="./img/hero/slide_2/hero-photo-cards-tablet.webp 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.webp 2x">
-                        <source media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_2/hero-photo-cards-desk.png 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.png 2x">
-                        <source media="(min-width: 768px)"
-                          srcset="./img/hero/slide_2/hero-photo-cards-tablet.png 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.png 2x">
-                        <img src="./img/hero/slide_2/hero-photo-cards-desk.png" alt="Фотографии с восхождений" width="410"
-                          height="459" loading="lazy">
-                      </picture>
-                    </a>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_2/hero-photo-cards-desk.webp 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/hero/slide_2/hero-photo-cards-tablet.webp 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_2/hero-photo-cards-desk.png 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/hero/slide_2/hero-photo-cards-tablet.png 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.png 2x">
+                      <img src="./img/hero/slide_2/hero-photo-cards-desk.png" alt="Фотографии с восхождений" width="410"
+                        height="459" loading="lazy">
+                    </picture>
                   </div>
                 </div>
                 <ul class="hero__subcontent">
@@ -237,18 +233,20 @@
                   <a class="hero__button" href="#">Смотреть тур</a>
                 </div>
                 <div class="hero__media hero__media--altai">
-                  <div class="hero__media-wrapper">
-                    <a href="https://music.yandex.ru/album/25474374?dir=desc&activeTab=track-list" target="_blank"
-                      rel="noopener noreferrer">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_3/hero-audio.webp 1x, ./img/hero/slide_3/hero-audio@2x.webp 2x">
-                        <source media="(min-width: 1200px)"
-                          srcset="./img/hero/slide_3/hero-audio.jpg 1x, ./img/hero/slide_3/hero-audio@2x.jpg 2x">
-                        <img src="./img/hero/slide_3/hero-audio.jpg" alt="Звуки гор Алтая" width="340" height="220"
-                          loading="lazy">
-                      </picture>
-                    </a>
+                  <div class="hero__media-wrapper audio">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_3/hero-audio.webp 1x, ./img/hero/slide_3/hero-audio@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/hero/slide_3/hero-audio.jpg 1x, ./img/hero/slide_3/hero-audio@2x.jpg 2x">
+                      <img src="./img/hero/slide_3/hero-audio.jpg" alt="Звуки гор Алтая" width="340" height="220"
+                        loading="lazy">
+                    </picture>
+                    <button class="hero__media-button audio__play" type="button" aria-label="play">
+                      <svg width="12" height="22" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
                 <ul class="hero__subcontent">
@@ -269,6 +267,558 @@
             </li>
           </ul>
           <div class="hero__control swiper-pagination" data-nojs="no-js"></div>
+        </div>
+      </section>
+
+      <section class="tours">
+        <div class="tours__container container">
+          <div class="tours__header">
+            <h2 class="tours__title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+            <div class="tours__arrows arrows" data-nojs="no-js">
+              <button class="tours__arrows-prev arrows__prev">
+                <svg width="14" height="8" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="tours__arrows-next arrows__next">
+                <svg width="14" height="8" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="tours__wrapper">
+            <div class="tours__slider swiper">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/tours/caucasus-desk.webp 1x, ./img/tours/caucasus-desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/tours/caucasus-tablet.webp 1x, ./img/tours/caucasus-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="./img/tours/caucasus-mobile.webp 1x, ./img/tours/caucasus-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/tours/caucasus-desk.jpg 1x, ./img/tours/caucasus-desk@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/tours/caucasus-tablet.jpg 1x, ./img/tours/caucasus-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)"
+                      srcset="./img/tours/caucasus-mobile.jpg 1x, ./img/tours/caucasus-mobile@2x.jpg 2x">
+
+                    <img src="./img/tours/caucasus-desk.jpg" alt="Фотография гор Кавказа" width="380" height="412"
+                      loading="lazy">
+                  </picture>
+                  <div class="tours__card">
+                    <ul class="tours__details-top">
+                      <li class="tours__place">
+                        <svg width="9" height="12" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <p>Кавказ</p>
+                      </li>
+                      <li class="tours__days">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <p>4 дня</p>
+                      </li>
+                      <li class="tours__nights">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <p>3 ночи</p>
+                      </li>
+                    </ul>
+                    <h3>Путешествие вокруг Эльбруса</h3>
+                    <div class="tours__line"></div>
+                    <ul class="tours__details">
+                      <li class="tours__complexity">
+                        <p>Сложность:</p>
+                        <span class="tours__star">
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="tours__date">
+                        <p>Даты набора:</p>
+                        <span>12.06-19.06</span>
+                      </li>
+                      <li class="tours__group">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tours__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/tours/altai-desk.webp 1x, ./img/tours/altai-desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/tours/altai-tablet.webp 1x, ./img/tours/altai-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="./img/tours/altai-mobile.webp 1x, ./img/tours/altai-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/tours/altai-desk.jpg 1x, ./img/tours/altai-desk@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/tours/altai-tablet.jpg 1x, ./img/tours/altai-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)"
+                      srcset="./img/tours/altai-mobile.jpg 1x, ./img/tours/altai-mobile@2x.jpg 2x">
+
+                    <img src="./img/tours/altai-desk.jpg" alt="Фотография гор Алтая" width="380" height="412"
+                      loading="lazy">
+                  </picture>
+                  <div class="tours__card">
+                    <ul class="tours__details-top">
+                      <li class="tours__place">
+                        <svg width="9" height="12" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <p>Алтай</p>
+                      </li>
+                      <li class="tours__days">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <p>14 дней</p>
+                      </li>
+                      <li class="tours__nights">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <p>13 ночей</p>
+                      </li>
+                    </ul>
+                    <h3>Путь к&nbsp;подножию Белухи</h3>
+                    <div class="tours__line"></div>
+                    <ul class="tours__details">
+                      <li class="tours__complexity">
+                        <p>Сложность:</p>
+                        <span class="tours__star">
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="tours__date">
+                        <p>Даты набора:</p>
+                        <span>14.06-23.06</span>
+                      </li>
+                      <li class="tours__group">
+                        <p>Группа:</p>
+                        <span>до 25 чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tours__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/tours/adygea-desk.webp 1x, ./img/tours/adygea-desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/tours/adygea-tablet.webp 1x, ./img/tours/adygea-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="./img/tours/adygea-mobile.webp 1x, ./img/tours/adygea-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/tours/adygea-desk.jpg 1x, ./img/tours/adygea-desk@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/tours/adygea-tablet.jpg 1x, ./img/tours/adygea-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)"
+                      srcset="./img/tours/adygea-mobile.jpg 1x, ./img/tours/adygea-mobile@2x.jpg 2x">
+
+                    <img src="./img/tours/adygea-desk.jpg" alt="Фотография гор Адыгеи" width="380" height="412"
+                      loading="lazy">
+                  </picture>
+                  <div class="tours__card">
+                    <ul class="tours__details-top">
+                      <li class="tours__place">
+                        <svg width="9" height="12" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <p>Адыгея</p>
+                      </li>
+                      <li class="tours__days">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <p>7 дней</p>
+                      </li>
+                      <li class="tours__nights">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <p>6 ночей</p>
+                      </li>
+                    </ul>
+                    <h3>Через Фишт к&nbsp;Черному морю</h3>
+                    <div class="tours__line"></div>
+                    <ul class="tours__details">
+                      <li class="tours__complexity">
+                        <p>Сложность:</p>
+                        <span class="tours__star">
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="tours__date">
+                        <p>Даты набора:</p>
+                        <span>15.07-19.07</span>
+                      </li>
+                      <li class="tours__group">
+                        <p>Группа:</p>
+                        <span>до 22 чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tours__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/tours/caucasus-desk.webp 1x, ./img/tours/caucasus-desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/tours/caucasus-tablet.webp 1x, ./img/tours/caucasus-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)"
+                      srcset="./img/tours/caucasus-mobile.webp 1x, ./img/tours/caucasus-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/tours/caucasus-desk.jpg 1x, ./img/tours/caucasus-desk@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/tours/caucasus-tablet.jpg 1x, ./img/tours/caucasus-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)"
+                      srcset="./img/tours/caucasus-mobile.jpg 1x, ./img/tours/caucasus-mobile@2x.jpg 2x">
+
+                    <img src="./img/tours/caucasus-desk.jpg" alt="Фотография гор Кавказа" width="380" height="412"
+                      loading="lazy">
+                  </picture>
+                  <div class="tours__card">
+                    <ul class="tours__details-top">
+                      <li class="tours__place">
+                        <svg width="9" height="12" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <p>Кавказ</p>
+                      </li>
+                      <li class="tours__days">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <p>4 дня</p>
+                      </li>
+                      <li class="tours__nights">
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="./img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <p>3 ночи</p>
+                      </li>
+                    </ul>
+                    <h3>Путешествие вокруг Эльбруса</h3>
+                    <div class="tours__line"></div>
+                    <ul class="tours__details">
+                      <li class="tours__complexity">
+                        <p>Сложность:</p>
+                        <span class="tours__star">
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-full" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-full"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                          <svg class="tours__star-empty" width="15" height="14" aria-hidden="true">
+                            <use xlink:href="./img/sprite.svg#star-empty"></use>
+                          </svg>
+                        </span>
+                      </li>
+                      <li class="tours__date">
+                        <p>Даты набора:</p>
+                        <span>12.06-19.06</span>
+                      </li>
+                      <li class="tours__group">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="tours__link" href="#">
+              <p>Показать все туры</p>
+              <svg width="9" height="14" aria-hidden="true">
+                <use xlink:href="./img/sprite.svg#icon-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <picture class="tours__background tours__background--left">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/tours/clouds-desk-left.webp 1x, ./img/tours/clouds-desk-left@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="./img/tours/clouds-desk-left.png 1x, ./img/tours/clouds-desk-left@2x.png 2x">
+          <img src="./img/tours/clouds-desk-left.png" alt="Облако" width="418" height="279" loading="lazy">
+        </picture>
+        <picture class="tours__background">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/tours/clouds-desk-right.webp 1x, ./img/tours/clouds-desk-right@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/tours/clouds-tablet-right.webp 1x, ./img/tours/clouds-tablet-right@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)"
+            srcset="./img/tours/clouds-mobile-right.webp 1x, ./img/tours/clouds-mobile-right@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="./img/tours/clouds-desk-right.png 1x, ./img/tours/clouds-desk-right@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/tours/clouds-tablet-right.png 1x, ./img/tours/clouds-tablet-right@2x.png 2x">
+          <source media="(min-width: 320px)"
+            srcset="./img/tours/clouds-mobile-right.png 1x, ./img/tours/clouds-mobile-right@2x.png 2x">
+          <img src="./img/tours/clouds-desk-right.png" alt="Облако" width="602" height="1364" loading="lazy">
+        </picture>
+      </section>
+
+      <section class="training">
+        <div class="training__container container">
+          <div class="training__header">
+            <h2 data-shadow="Обучение">Обучение</h2>
+            <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных
+              маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+          </div>
+
+          <div class="training__instructors instructors">
+            <div class="instructors__header">
+              <h3>Наши инструкторы</h3>
+              <div class="instructors__arrows arrows" data-nojs="no-js">
+                <button class="instructors__arrows-prev arrows__prev">
+                  <svg width="14" height="8" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="instructors__arrows-next arrows__next">
+                  <svg width="14" height="8" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="instructors__wrapper">
+              <div class="instructors__slider swiper">
+                <ul class="instructors__list swiper-wrapper">
+                  <li class="instructors__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/instructors/alexander-desk.webp 1x, ./img/instructors/alexander-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/instructors/alexander-tablet.webp 1x, ./img/instructors/alexander-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/instructors/alexander-desk.jpg 1x, ./img/instructors/alexander-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/instructors/alexander-tablet.jpg 1x, ./img/instructors/alexander-tablet@2x.jpg 2x">
+                      <img src="./img/instructors/alexander-desk.jpg" alt="Александр Прокофьев" width="238" height="212"
+                        loading="lazy">
+                    </picture>
+                    <div class="instructors__header-container">
+                      <h4>Александр Прокофьев</h4>
+                      <a href="#" target="_blank" aria-label="ВКонтакте инструктора.">
+                        <svg width="16" height="9" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="instructors__info">
+                      <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+
+                  <li class="instructors__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/instructors/svetlana-desk.webp 1x, ./img/instructors/svetlana-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/instructors/svetlana-tablet.webp 1x, ./img/instructors/svetlana-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/instructors/svetlana-desk.jpg 1x, ./img/instructors/svetlana-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/instructors/svetlana-tablet.jpg 1x, ./img/instructors/svetlana-tablet@2x.jpg 2x">
+                      <img src="./img/instructors/svetlana-desk.jpg" alt="Светлана Афиногенова" width="238" height="212"
+                        loading="lazy">
+                    </picture>
+                    <div class="instructors__header-container">
+                      <h4>Светлана Афиногенова</h4>
+                      <a href="#" target="_blank" aria-label="ВКонтакте инструктора.">
+                        <svg width="16" height="9" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="instructors__info">
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать
+                        – в&nbsp;этом назначение жизни.</p>
+                    </div>
+                  </li>
+
+                  <li class="instructors__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/instructors/nadejda-desk.webp 1x, ./img/instructors/nadejda-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/instructors/nadejda-tablet.webp 1x, ./img/instructors/nadejda-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/instructors/nadejda-desk.jpg 1x, ./img/instructors/nadejda-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/instructors/nadejda-tablet.jpg 1x, ./img/instructors/nadejda-tablet@2x.jpg 2x">
+                      <img src="./img/instructors/nadejda-desk.jpg" alt="Надежда Колесниченко" width="238" height="212"
+                        loading="lazy">
+                    </picture>
+                    <div class="instructors__header-container">
+                      <h4>Надежда Колесниченко</h4>
+                      <a href="#" target="_blank" aria-label="ВКонтакте инструктора.">
+                        <svg width="16" height="9" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="instructors__info">
+                      <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в&nbsp;общении,
+                        и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                    </div>
+                  </li>
+
+                  <li class="instructors__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/instructors/fedor-desk.webp 1x, ./img/instructors/fedor-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/instructors/fedor-tablet.webp 1x, ./img/instructors/fedor-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/instructors/fedor-desk.jpg 1x, ./img/instructors/fedor-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/instructors/fedor-tablet.jpg 1x, ./img/instructors/fedor-tablet@2x.jpg 2x">
+                      <img src="./img/instructors/fedor-desk.jpg" alt="Федор Кайгородов" width="238" height="212"
+                        loading="lazy">
+                    </picture>
+                    <div class="instructors__header-container">
+                      <h4>Федор Кайгородов</h4>
+                      <a href="#" target="_blank" aria-label="ВКонтакте инструктора.">
+                        <svg width="16" height="9" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="instructors__info">
+                      <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001 года. В&nbsp;России побывал в&nbsp;горных районах
+                        Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                    </div>
+                  </li>
+
+                  <li class="instructors__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/instructors/alexander-desk.webp 1x, ./img/instructors/alexander-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/instructors/alexander-tablet.webp 1x, ./img/instructors/alexander-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/instructors/alexander-desk.jpg 1x, ./img/instructors/alexander-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/instructors/alexander-tablet.jpg 1x, ./img/instructors/alexander-tablet@2x.jpg 2x">
+                      <img src="./img/instructors/alexander-desk.jpg" alt="Александр Прокофьев" width="238" height="212"
+                        loading="lazy">
+                    </picture>
+                    <div class="instructors__header-container">
+                      <h4>Александр Прокофьев</h4>
+                      <a href="#" target="_blank" aria-label="ВКонтакте инструктора.">
+                        <svg width="16" height="9" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="instructors__info">
+                      <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу. </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="training__process">
+            <h3>Процесс обучения</h3>
+            <ul>
+              <li class="training__process-item training__process-item--map">
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#icon-map"></use>
+                </svg>
+                <p>Изучение спортивного туристского движения</p>
+              </li>
+              <li class="training__process-item training__process-item--boots">
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#icon-boots"></use>
+                </svg>
+                <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+              </li>
+              <li class="training__process-item training__process-item--tree">
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#icon-tree"></use>
+                </svg>
+                <p>Лекции по окружающей среде, экологии и&nbsp;гигиене</p>
+              </li>
+              <li class="training__process-item training__process-item--mountains">
+                <svg width="25" height="25" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#icon-mountains"></use>
+                </svg>
+                <p>Разъяснение сложности горных препятствий</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

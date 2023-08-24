@@ -2,8 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initHeroSlider} from './vendor/init-slider';
-import {createIframe} from './vendor/iframe';
+import {addVideoPlayer, addAudioPlayer} from './vendor/iframe';
 import {Burger} from './modules/menu/burger';
+import {initToursSlider} from './vendor/init-slider';
+import {initInstructorsSlider} from './vendor/init-slider';
 
 // ---------------------------------
 
@@ -14,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initHeroSlider();
+  initToursSlider();
+  initInstructorsSlider();
+  addVideoPlayer();
+  addAudioPlayer();
   // Modules
   // ---------------------------------
 
@@ -24,7 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    createIframe();
     const burger = new Burger();
     window.burger = burger;
     burger.init();

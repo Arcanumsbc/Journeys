@@ -1,0 +1,181 @@
+.instructors__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    bottom: 30px;
+    left: 0;
+    width: 100px;
+    box-shadow: $shadow-cards;
+  }
+
+  &::after {
+    right: 0;
+    left: auto;
+  }
+}
+.instructors__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+
+  & h3 {
+    margin: 0;
+    font-family: $ff-montserrat;
+    font-weight: $fw-bold;
+    font-size: $fz-xmedium;
+    line-height: $lh-xmedium;
+    color: $color-elephant;
+
+    @include vp-1199 {
+      font-size: $fz-xxxsmall;
+      line-height: $lh-xxxsmall;
+      padding-bottom: 24px;
+    }
+
+    @include vp-767 {
+      font-size: $fz-xxsmall;
+      line-height: $lh-xxsmall;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.instructors__slider {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  max-height: 100%;
+  background-color: $color-default-white;
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 7px;
+  }
+}
+
+.instructors__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instructors__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: $shadow-cards;
+  min-height: 377px;
+  height: auto;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+    object-fit: cover;
+
+    @include vp-1199 {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include vp-1199 {
+      object-position: center;
+    }
+  }
+
+  @include vp-1199 {
+    width: 176px;
+    min-height: 411px;
+    padding: 15px;
+  }
+
+  @include vp-767 {
+    width: 250px;
+    min-height: 385px;
+    padding: 20px;
+  }
+}
+
+.instructors__header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+  & h4 {
+    margin: 0;
+    font-family: $ff-montserrat;
+    font-weight: $fw-bold;
+    font-size: $fz-xsmall;
+    line-height: $lh-xxsmall;
+    color: $color-elephant;
+    width: 120px;
+  }
+}
+
+.instructors__header-container a {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba($color-navy-blue, 0.1);
+
+  & svg {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 14px;
+    height: 8px;
+    fill: $color-elephant;
+  }
+
+  @include hover-focus {
+    border-color: $color-elephant;
+
+    &:active {
+      background-color: $color-navy-blue;
+      border-color: $color-navy-blue;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.instructors__info {
+  & p {
+    margin: 0;
+    font-family: $ff-montserrat;
+    font-weight: $fw-regular;
+    font-size: $fz-small;
+    line-height: $lh-xxsmall;
+    color: $color-elephant;
+
+    @include vp-1199 {
+      font-size: $fz-small;
+      line-height: $lh-xxxsmall;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.arrows {
+  position: relative;
+  display: flex;
+  column-gap: 4px;
+}
+
+.arrows button {
+  background-color: $color-navy-blue;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: $trans-default;
+  width: 37px;
+  height: 35px;
+  fill: $color-default-white;
+
+  @include hover-focus {
+    border-color: $color-resolution-blue;
+    background-color: transparent;
+
+    & svg {
+      fill: $color-resolution-blue;
+    }
+
+    &:active {
+      background-color: $color-resolution-blue;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
+.arrows__next {
+  transform: rotate(180deg);
+}
+
