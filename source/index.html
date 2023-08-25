@@ -24,6 +24,7 @@
 
 <body>
   <div class="wrapper">
+    <!-- header -->
     <header class="main-header" id="top" data-header="data-header">
       <div class="main-header__container container">
         <div class="main-header__wrapper">
@@ -32,28 +33,28 @@
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <div class="main-header__menu main-header__menu--no-js">
+          <nav class="main-header__menu nav main-header__menu--no-js">
             <ul>
               <li>
-                <a href="#">Туры</a>
+                <a href="#tours" data-link="data-link">Туры</a>
               </li>
               <li>
-                <a href="#">Обучение</a>
+                <a href="#training" data-link="data-link">Обучение</a>
               </li>
               <li>
-                <a href="#">О нас</a>
+                <a href="#" data-link="data-link">О нас</a>
               </li>
               <li>
-                <a href="#">Отзывы</a>
+                <a href="#" data-link="data-link">Отзывы</a>
               </li>
               <li>
-                <a href="#">Фотографии</a>
+                <a href="#" data-link="data-link">Фотографии</a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="#" data-link="data-link">Контакты</a>
               </li>
             </ul>
-          </div>
+          </nav>
 
           <div class="main-header__contact">
             <a href="tel:88007253232" aria-label="Позвонить нам">8-800-725-32-32</a>
@@ -67,12 +68,12 @@
               <use xlink:href="./img/sprite.svg#icon-close"></use>
             </svg>
           </button>
-
         </div>
       </div>
     </header>
 
     <main>
+      <!--hero block-->
       <section class="hero" id="hero">
         <h1 class="visually-hidden">Туристическое агентство: LifeTour.</h1>
         <div class="hero__slider swiper">
@@ -270,7 +271,8 @@
         </div>
       </section>
 
-      <section class="tours">
+       <!--tours block-->
+      <section class="tours" id="tours">
         <div class="tours__container container">
           <div class="tours__header">
             <h2 class="tours__title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
@@ -624,7 +626,8 @@
         </picture>
       </section>
 
-      <section class="training">
+      <!--training block-->
+      <section class="training" id="training">
         <div class="training__container container">
           <div class="training__header">
             <h2 data-shadow="Обучение">Обучение</h2>
@@ -821,6 +824,50 @@
           </div>
         </div>
       </section>
+
+      <!--about block-->
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__content">
+            <h2 data-shadow="О нас">О нас</h2>
+            <ul>
+              <li>
+                <h3>История компании</h3>
+                <p>В&nbsp;далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              </li>
+              <li>
+                <h3>Наша цель </h3>
+                <p>Подарить вам незабываемые впечатления от&nbsp;похода в горы. Мы берем на&nbsp;себя все организационные вопросы. При&nbsp;организации мы обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <picture class="about__background">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/about/about-bg-desk.webp 1x, ./img/about/about-bg-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/about/about-bg-tablet.webp 1x, ./img/about/about-bg-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)"
+            srcset="./img/about/about-bg-mobile.webp 1x, ./img/about/about-bg-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="./img/about/about-bg-desk.png 1x, ./img/about/about-bg-desk@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/about/about-bg-tablet.png 1x, ./img/about/about-bg-tablet@2x.png 2x">
+          <source media="(min-width: 320px)"
+            srcset="./img/about/about-bg-mobile.png 1x, ./img/about/about-bg-mobile@2x.png 2x">
+          <img src="./img/about/about-bg-desk.png" alt="Фото с похода" width="808" height="474" loading="lazy">
+        </picture >
+
+        <picture class="about__background about__background--right">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/about/about-bg-clouds-desk.webp 1x, ./img/about/about-bg-clouds-desk@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="./img/about/about-bg-clouds-desk.png 1x, ./img/about/about-bg-clouds-desk@2x.png 2x">
+          <img src="./img/about/about-bg-clouds-desk.png" alt="Облако" width="618" height="280" loading="lazy">
+        </picture >
+      </section>
+
+
 
       <!-- <section class="intro">
           <div class="container">

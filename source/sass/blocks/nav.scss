@@ -1,0 +1,35 @@
+.nav {
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    padding: 120px 40px 64px;
+    top: -200vh;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: $color-default-white;
+    transition: top $trans-default;
+
+    & ul {
+      overflow-y: auto;
+      flex-direction: column;
+      row-gap: 26px;
+      width: 100%;
+      background-color: $color-default-white;
+
+      @include vp-767 {
+        row-gap: 21px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 99px 15px 50px;
+    min-height: 343px;
+    height: auto;
+  }
+}

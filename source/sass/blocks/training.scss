@@ -18,6 +18,14 @@
       display: none;
     }
   }
+
+  @include vp-1199 {
+    margin-bottom: 70px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
+  }
 }
 
 .training__container {
@@ -180,36 +188,6 @@
     height: 1px;
     background-color: rgba($color-navy-blue, 0.2);
   }
-
-  // &:first-child::after {
-  //   left: -50vw;
-  // }
-
-  // &:last-child::after {
-  //   width: 100%;
-  //   right: auto;
-  // }
-
-  // &--map {
-  //   &::after {
-  //     left: -50vw;
-  //   }
-  // }
-
-  // &--mountains {
-  //   &::after {
-  //     right: -50vw;
-  //   }
-  // }
-  // &--map,
-  // &--boots,
-  // &--tree,
-  // &--mountains {
-  //   &::after {
-  //     left: -50vw;
-  //     right: -50vw;
-  //   }
-  // }
 
   & P {
     margin: 0;

@@ -3,11 +3,11 @@ import {FocusLock} from '../../utils/focus-lock';
 
 const navMain = document.querySelector('.main-header__menu');
 navMain.classList.remove('main-header__menu--no-js');
-
 export class Burger {
   constructor() {
     this._header = document.querySelector('[data-header]');
     this._burger = document.querySelector('[data-burger]');
+    this._link = document.querySelector('[data-link]');
     this._scrollLock = new ScrollLock();
     this._focusLock = new FocusLock();
     this._isMenuOpen = false;
@@ -28,6 +28,7 @@ export class Burger {
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
+    this._link.getAttribute('data-link');
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
     document.addEventListener('click', this._onDocumentClick);
@@ -64,7 +65,7 @@ export class Burger {
   }
 
   _onDocumentClick(evt) {
-    if (evt.target.hasAttribute('data-close-menu')) {
+    if (evt.target.hasAttribute('data-close-menu') || evt.target.hasAttribute('data-link') || evt.preventDefault()) {
       this._closeMenu();
     }
   }

@@ -1,66 +1,11 @@
 .main-header {
   display: flex;
-  padding-top: 40px;
   z-index: 3;
   position: relative;
 
   @include vp-1199 {
-    padding-top: 30px;
-  }
-
-  & .burger__closed {
-    display: none;
-  }
-
-  &.is-open {
-    & .main-header__container::before {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    & .main-header__menu {
-      display: flex;
-      flex-wrap: wrap;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 5;
-      background-color: $color-default-white;
-
-      & ul {
-        flex-direction: column;
-        flex-wrap: wrap;
-        row-gap: 26px;
-        padding: 124px 45px 70px;
-        width: 100%;
-        margin-left: -45px;
-        background-color: $color-default-white;
-      }
-    }
-
-    & a {
-      color: $color-elephant;
-      fill: $color-elephant;
-      z-index: 6;
-    }
-
-    & .burger__open {
-      display: none;
-    }
-
     & .burger__closed {
-      display: block;
-    }
-  }
-
-  @include vp-767 {
-    padding-top: 15px;
-
-    &.is-open {
-      & .main-header__menu ul {
-        padding: 99px 15px 50px;
-        margin-left: -15px;
-      }
+      display: none;
     }
   }
 }
@@ -74,11 +19,11 @@
   }
 
   @include vp-1199 {
-    padding: 0 45px;
+    padding: 0;
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0;
   }
 
   &::before {
@@ -96,6 +41,15 @@
   flex-direction: row;
   position: relative;
   justify-content: space-between;
+  padding-top: 45px;
+
+   @include vp-1199 {
+    padding: 30px 45px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
 }
 
 .main-header__logo {
@@ -127,7 +81,7 @@
     width: 115px;
     height: 34px;
     position: absolute;
-    right: 0;
+    right: 15px;
 
     & svg {
       width: 115px;
@@ -138,6 +92,7 @@
 
 .main-header__menu {
   align-self: center;
+  z-index: 2;
 
   @include vp-1199 {
     order: 1;
@@ -159,6 +114,7 @@
 
   @include vp-1199 {
     display: flex;
+    text-transform: uppercase;
     font-weight: $fw-bold;
     letter-spacing: $ls-interium;
   }
@@ -223,8 +179,8 @@
     font-size: $fz-xsmall;
     line-height: $lh-xsmall;
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: 55px;
+    right: 15px;
   }
 }
 
@@ -233,20 +189,79 @@
 }
 
 .main-header.is-open {
-  & .main-header__menu a {
-    @include hover {
-      color: $color-elephant;
-      border-bottom: 1px solid $color-elephant;
+  & a {
+    color: $color-elephant;
+    fill: $color-elephant;
+    z-index: 6;
+  }
+
+  & .burger__open {
+    display: none;
+  }
+
+  & .burger__closed {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    // & svg {
+    //   width: 18px;
+    //   height: 18px;
+    // }
+  }
+
+  & .main-header__container {
+    position: relative;
+    background-color: $color-default-white;
+  }
+
+  & .main-header__container::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  & .main-header__wrapper {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: $color-default-white;
+
+    &::before {
+      opacity: 1;
+      transform: scale(1);
     }
 
-    @include focus {
-      color: $color-elephant;
-      outline: 1px solid $color-elephant;
-      padding: 3px 5px;
+    @include vp-767 {
+      padding-left: 15px;
+      padding-right: 15px;
     }
+  }
 
-    &:active {
-      border-bottom: none;
+  & .main-header__menu.nav {
+    top: 0;
+  }
+
+  .main-header__menu li {
+    & a {
+      margin-left: 1px;
+      border: 1px solid transparent;
+      color: $color-elephant;
+
+      @include hover {
+        color: $color-elephant;
+        border-bottom: 1px solid $color-elephant;
+
+        &:active {
+          color: $color-elephant;
+          border-bottom: none;
+        }
+      }
+
+      @include focus {
+        color: $color-elephant;
+        outline: 1px solid $color-elephant;
+        padding: 3px 5px;
+      }
     }
   }
 }
