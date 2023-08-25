@@ -6,6 +6,7 @@ import {addVideoPlayer, addAudioPlayer} from './vendor/iframe';
 import {Burger} from './modules/menu/burger';
 import {initToursSlider} from './vendor/init-slider';
 import {initInstructorsSlider} from './vendor/init-slider';
+import {initRewiewsSlider} from './vendor/init-slider';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initInstructorsSlider();
   addVideoPlayer();
   addAudioPlayer();
+  initRewiewsSlider();
   // Modules
   // ---------------------------------
 
