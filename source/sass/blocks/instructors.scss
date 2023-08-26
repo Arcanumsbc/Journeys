@@ -3,30 +3,33 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: $shadow-cards;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 30px;
-    bottom: 30px;
-    left: 0;
-    width: 100px;
-    box-shadow: $shadow-cards;
-  }
 
-  &::after {
-    right: 0;
-    left: auto;
-  }
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   // top: 30px;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100px;
+  //   box-shadow: $shadow-cards;
+  // }
+
+  // &::after {
+  //   right: 0;
+  //   left: auto;
+  // }
 }
 
 .instructors__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -38,6 +41,7 @@
     font-size: $fz-xmedium;
     line-height: $lh-xmedium;
     color: $color-elephant;
+    padding-top: 8px;
 
     @include vp-1199 {
       font-size: $fz-xxxsmall;
@@ -51,25 +55,43 @@
       padding-bottom: 25px;
     }
   }
+
+  @include vp-1199 {
+    padding-bottom: 8px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 8px;
+  }
+}
+
+.instructors__arrows {
+  @include vp-1199 {
+    transform: translateX(0) translateY(-1px);
+  }
+
+  @include vp-767 {
+    transform: translateX(0) translateY(-3px);
+  }
 }
 
 .instructors__slider {
   display: flex;
   margin: 0 auto;
   width: 100%;
-  margin-top: -30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   max-width: 1200px;
   max-height: 100%;
   background-color: $color-default-white;
 
   @include vp-1199 {
-    margin-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 43px;
   }
 
   @include vp-767 {
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 38px;
   }
 }
 
@@ -88,15 +110,11 @@
   height: auto;
 
   & img {
-    width: 100%;
+    min-height: 212px;
     height: 100%;
+    width: 100%;
     object-position: bottom;
     object-fit: cover;
-
-    @include vp-1199 {
-      width: 100%;
-      height: 100%;
-    }
 
     @include vp-1199 {
       object-position: center;
@@ -107,19 +125,21 @@
     width: 176px;
     min-height: 411px;
     padding: 15px;
+    height: auto;
   }
 
   @include vp-767 {
     width: 250px;
     min-height: 385px;
     padding: 20px;
+    height: auto;
   }
 }
 
 .instructors__header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 14px;
 
   & h4 {
@@ -131,6 +151,10 @@
     color: $color-elephant;
     width: 120px;
   }
+
+  @include vp-1199 {
+    padding-bottom: 12px;
+  }
 }
 
 .instructors__header-container a {
@@ -138,6 +162,7 @@
   width: 25px;
   height: 25px;
   border: 1px solid rgba($color-navy-blue, 0.1);
+  margin-top: 3px;
 
   & svg {
     position: absolute;
@@ -163,6 +188,10 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  @include vp-767 {
+    margin-right: 12px;
   }
 }
 

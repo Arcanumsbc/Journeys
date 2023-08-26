@@ -1,10 +1,16 @@
 .hero {
-  margin-top: -107px;
+  margin-top: -102px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 123px;
 
   @include vp-1199 {
-    margin-bottom: 70px;
+    margin-top: -104px;
+    margin-bottom: 88px;
+  }
+
+  @include vp-767 {
+    margin-top: -74px;
+    margin-bottom: 67px;
   }
 }
 
@@ -103,7 +109,7 @@
   }
 
   @include vp-767 {
-    margin-top: 139px;
+    margin-top: 140px;
   }
 }
 
@@ -114,7 +120,7 @@
   line-height: $lh-xxxllarge;
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-right: auto;
   position: relative;
   z-index: 1;
@@ -127,12 +133,11 @@
     line-height: $lh-xlarge;
     text-align: center;
     min-width: 700px;
-    width: 100%;
-    max-width: auto;
+    margin-bottom: 14px;
+    max-width: 100%;
   }
 
   @include vp-767 {
-    margin-bottom: 15px;
     font-size: $fz-sbig;
     line-height: $lh-sbig;
     min-width: 290px;
@@ -148,16 +153,18 @@
   color: $color-default-white;
   width: 470px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @include vp-1199 {
     text-align: center;
+    margin-bottom: 26px;
   }
 
   @include vp-767 {
     font-size: $fz-xssmall;
     line-height: $lh-smedium;
-    width: auto;
+    width: 100%;
+    padding: 0 3px;
     margin-bottom: 20px;
   }
 }
@@ -173,10 +180,11 @@
   width: 220px;
   max-width: 400px;
   min-height: 58px;
-  padding: 19px;
+  padding: 21px;
+  padding-bottom: 19px;
   background-color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
-  margin-bottom: 150px;
+  margin-bottom: 151px;
   cursor: pointer;
   user-select: none;
 
@@ -188,7 +196,7 @@
   @include vp-767 {
     min-height: 52px;
     width: 180px;
-    padding: 17px 19px;
+    padding: 18px 19px 16px;
   }
 
   @include hover-focus {
@@ -221,6 +229,7 @@
   @include vp-1199 {
     position: relative;
     top: 0;
+    left: 0;
   }
 
   @include vp-767 {
@@ -323,7 +332,7 @@
   @include vp-1199 {
     width: 442px;
     height: 365px;
-    top: 0;
+    top: -16px;
 
     & .hero__media-wrapper {
       min-width: auto;
@@ -337,6 +346,10 @@
 .hero__media--altai {
   width: 340px;
   height: 220px;
+
+  @include vp-1199 {
+    top: 19px;
+  }
 
   & .hero__media-wrapper {
     min-width: 340px;
@@ -397,12 +410,12 @@
   position: absolute;
   margin: 0 auto;
   max-width: 1200px;
-  right: 0;
-  bottom: 10.75%;
+  right: -6px;
+  bottom: 12.1%;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
-  column-gap: 15px;
+  column-gap: 6px;
 
   @include vp-1279 {
     padding: 0 20px;
@@ -411,11 +424,12 @@
   @include vp-1199 {
     justify-content: center;
     bottom: 90px;
+    right: 6px;
   }
 
   @include vp-767 {
     bottom: 40px;
-    column-gap: 12px;
+    column-gap: 4px;
   }
 }
 
@@ -436,6 +450,11 @@
       border-color: $color-navy-blue;
       background-color: $color-navy-blue;
     }
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
   }
 }
 

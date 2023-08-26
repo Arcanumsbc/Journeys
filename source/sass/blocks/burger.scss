@@ -19,7 +19,7 @@
   width: 26px;
   height: 26px;
   fill: $color-default-white;
-  transform: translateX(5%) translateY(-50%);
+  transform: translateX(-21%) translateY(-50%);
 
   @include hover-focus {
     fill: $color-resolution-blue;
@@ -27,6 +27,10 @@
     &:active {
       fill: $color-navy-blue;
     }
+  }
+
+  @include vp-767 {
+    transform: translateX(-21%) translateY(-83%);
   }
 }
 
@@ -44,5 +48,13 @@
     &:active {
       fill: $color-navy-blue;
     }
+  }
+
+  @include vp-1199 {
+    transform: translateX(-23%) translateY(-55%);
+  }
+
+  @include vp-767 {
+    transform: translateX(-23%) translateY(-100%);
   }
 }

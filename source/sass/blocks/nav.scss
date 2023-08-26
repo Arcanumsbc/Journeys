@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 420px;
     height: auto;
-    padding: 120px 40px 64px;
+    padding: 125px 45px 64px;
     top: -200vh;
     left: 0;
     right: 0;
@@ -22,7 +22,7 @@
       background-color: $color-default-white;
 
       @include vp-767 {
-        row-gap: 21px;
+        row-gap: 22px;
       }
     }
   }

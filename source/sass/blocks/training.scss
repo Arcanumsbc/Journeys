@@ -1,13 +1,13 @@
 .training {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 165px;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
     left: -30px;
-    bottom: -34px;
+    bottom: -35px;
     height: 1px;
     width: auto;
     background-color: rgba($color-navy-blue, 0.2);
@@ -20,11 +20,11 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 70px;
+    margin-bottom: 91px;
   }
 
   @include vp-767 {
-    margin-bottom: 60px;
+    margin-bottom: 78px;
   }
 }
 
@@ -59,7 +59,7 @@
   line-height: $lh-big;
   color: $color-elephant;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
   width: 100%;
   max-width: 700px;
   position: relative;
@@ -89,13 +89,13 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: $fz-xxsmedium;
     line-height: $lh-xxsmedium;
   }
 
   @include vp-767 {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     font-size: $fz-xsmedium;
     line-height: $lh-xsmedium;
   }
@@ -115,14 +115,14 @@
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
     max-width: 560px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 
   @include vp-767 {
     font-size: $fz-xsmall;
     line-height: $lh-smedium;
-    max-width: auto;
-    padding-bottom: 37px;
+    max-width: 100%;
+    padding-bottom: 41px;
   }
 }
 
@@ -130,6 +130,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 51px;
+
+  @include vp-1199 {
+    padding-top: 0;
+  }
 
   & h3 {
     margin: 0;
@@ -138,18 +143,19 @@
     font-size: $fz-xmedium;
     line-height: $lh-xmedium;
     color: $color-elephant;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
 
     @include vp-1199 {
       font-size: $fz-xxxsmall;
       line-height: $lh-xxxsmall;
-      padding-bottom: 44px;
+      padding-bottom: 40px;
     }
 
     @include vp-767 {
       font-size: $fz-xxsmall;
       line-height: $lh-xxsmall;
-      padding-bottom: 30px;
+      padding-bottom: 27px;
+      margin-left: 4px;
     }
   }
 

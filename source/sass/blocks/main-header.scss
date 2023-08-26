@@ -41,7 +41,7 @@
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 40px;
 
    @include vp-1199 {
     padding: 30px 45px;
@@ -66,6 +66,7 @@
   }
 
   @include vp-1199 {
+    margin-left: 80px;
     width: 144px;
     height: 44px;
 
@@ -81,7 +82,7 @@
     width: 115px;
     height: 34px;
     position: absolute;
-    right: 15px;
+    right: 13px;
 
     & svg {
       width: 115px;
@@ -111,6 +112,7 @@
   font-weight: $fw-regular;
   font-size: $fz-xxsmall;
   line-height: $lh-xxsmall;
+  transform: translateX(-2px);
 
   @include vp-1199 {
     display: flex;
@@ -151,6 +153,8 @@
   font-size: $fz-xxxsmall;
   line-height: $lh-xxxsmall;
   align-self: center;
+  transform: translateX(-2px) translateY(2px);
+  // letter-spacing: -0.03em;
 
   & a {
     color: $color-default-white;
@@ -180,7 +184,7 @@
     line-height: $lh-xsmall;
     position: absolute;
     top: 55px;
-    right: 15px;
+    right: 13px;
   }
 }
 
@@ -203,11 +207,6 @@
     display: block;
     width: 18px;
     height: 18px;
-
-    // & svg {
-    //   width: 18px;
-    //   height: 18px;
-    // }
   }
 
   & .main-header__container {

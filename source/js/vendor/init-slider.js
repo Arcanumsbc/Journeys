@@ -79,7 +79,6 @@ const initInstructorsSlider = () => {
     initialslide: 0,
     speed: 300,
     loop: false,
-    autoHeight: true,
     simulateTouch: true,
 
     breakpoints: {

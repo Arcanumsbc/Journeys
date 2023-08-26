@@ -16,12 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initHeroSlider();
-  initToursSlider();
-  initInstructorsSlider();
-  addVideoPlayer();
-  addAudioPlayer();
-  initRewiewsSlider();
   // Modules
   // ---------------------------------
 
@@ -35,6 +29,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     window.burger = burger;
     burger.init();
+    initHeroSlider();
+    initToursSlider();
+    initInstructorsSlider();
+    addVideoPlayer();
+    addAudioPlayer();
+    initRewiewsSlider();
   });
 });
 
