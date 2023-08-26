@@ -6,6 +6,10 @@
     margin-bottom: 70px;
   }
 
+  @include vp-767 {
+    margin-bottom: 60px;
+  }
+
   > picture {
     position: absolute;
     z-index: -1;

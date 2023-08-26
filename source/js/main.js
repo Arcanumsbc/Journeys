@@ -7,6 +7,7 @@ import {Burger} from './modules/menu/burger';
 import {initToursSlider} from './vendor/init-slider';
 import {initInstructorsSlider} from './vendor/init-slider';
 import {initRewiewsSlider} from './vendor/init-slider';
+import {initAdvantagesSlider} from './vendor/init-slider';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initAdvantagesSlider();
   // Modules
   // ---------------------------------
 
