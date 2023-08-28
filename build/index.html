@@ -48,7 +48,7 @@
                 <a href="#reviews" data-link="data-link">Отзывы</a>
               </li>
               <li>
-                <a href="#" data-link="data-link">Фотографии</a>
+                <a href="#gallery" data-link="data-link">Фотографии</a>
               </li>
               <li>
                 <a href="#" data-link="data-link">Контакты</a>
@@ -89,11 +89,11 @@
                     srcset="./img/hero/slide_1/hero-bg-slide1-mobile.webp 1x, ./img/hero/slide_1/hero-bg-slide1-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1200px)"
-                    srcset="./img/hero/slide_1/hero-bg-slide1-desk.jpg 1x, img/hero/slide_1/hero-bg-slide1-desk@2x.jpg 2x">
+                    srcset="./img/hero/slide_1/hero-bg-slide1-desk.jpg 1x, ./img/hero/slide_1/hero-bg-slide1-desk@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="./img/hero/slide_1/hero-bg-slide1-tablet.jpg 1x, img/hero/slide_1/hero-bg-slide1-tablet@2x.jpg 2x">
+                    srcset="./img/hero/slide_1/hero-bg-slide1-tablet.jpg 1x, ./img/hero/slide_1/hero-bg-slide1-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
-                    srcset="./img/hero/slide_1/hero-bg-slide1-mobile.jpg 1x, img/hero/slide_1/hero-bg-slide1-mobile@2x.jpg 2x">
+                    srcset="./img/hero/slide_1/hero-bg-slide1-mobile.jpg 1x, ./img/hero/slide_1/hero-bg-slide1-mobile@2x.jpg 2x">
 
                   <img src="./img/hero/slide_1/hero-bg-slide1-desk.jpg" alt="Фотография гор Кавказа" width="1440"
                     height="800" loading="lazy">
@@ -1036,6 +1036,7 @@
         </picture>
       </section>
 
+      <!--advantages block-->
       <section class="advantages" id="advantages">
         <div class="advantages__container container">
           <h2 data-shadow="Преимущества">Преимущества</h2>
@@ -1112,13 +1113,184 @@
           </div>
         </div>
         <picture aria-hidden="true">
-          <!-- <source type="image/webp" media="(min-width: 1200px)"
-            srcset="./img/advantages/advantages-bg-clouds-desk.webp, ./img/advantages/advantages-bg-clouds-desk@2x.webp 2x"> -->
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/advantages/advantages-bg-clouds-desk.webp, ./img/advantages/advantages-bg-clouds-desk@2x.webp 2x">
           <source media="(min-width: 1200px)"
             srcset="./img/advantages/advantages-bg-clouds-desk.png, ./img/advantages/advantages-bg-clouds-desk@2x.png 2x">
           <img src="./img/advantages/advantages-bg-clouds-desk.png" alt="Облако."  width="602" height="263"
             loading="lazy">
         </picture>
+      </section>
+
+      <!--gallery block-->
+      <section class="gallery" id="gallery">
+        <div class="gallery__container container">
+          <h2 data-shadow="Фотогалерея">Фотогалерея</h2>
+          <div class="gallery__header">
+            <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а&nbsp;также отмечайте нас на фото.
+                Лучшие фотографии украсят этот раздел нашего сайта.</p>
+            <div class="gallery__arrows arrows" data-nojs="no-js">
+              <button class="gallery__arrows-prev arrows__prev">
+                <svg width="14" height="8" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="gallery__arrows-next arrows__next">
+                <svg width="14" height="8" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery__slider swiper">
+            <ul class="gallery__list swiper-wrapper">
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_1.webp, ./img/gallery/photo_1@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_1.jpg 1x, ./img/gallery/photo_1@2x.jpg 2x">
+                  <img src="./img/gallery/photo_1.jpg" alt="Мужчина на фоне гор" width="275" height="449"
+                    loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <picture data-photo="photo-top">
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_2.webp, ./img/gallery/photo_2@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_2.jpg 1x, ./img/gallery/photo_2@2x.jpg 2x">
+                  <img src="./img/gallery/photo_2.jpg" alt="Люди у костра" width="298" height="179"
+                    loading="lazy">
+                </picture>
+                <picture data-photo="photo-bottom">
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_3.webp, ./img/gallery/photo_3@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_3.jpg 1x, ./img/gallery/photo_3@2x.jpg 2x">
+                  <img src="./img/gallery/photo_3.jpg" alt="Рука держащая компас на фоне гор" width="298" height="265"
+                    loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_4.webp, ./img/gallery/photo_4@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_4.jpg 1x, ./img/gallery/photo_4@2x.jpg 2x">
+                  <img src="./img/gallery/photo_4.jpg" alt="Люди идут по горам" width="272" height="449"
+                    loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <picture data-photo="photo-top">
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_5.webp, ./img/gallery/photo_5@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_5.jpg 1x, ./img/gallery/photo_5@2x.jpg 2x">
+                  <img src="./img/gallery/photo_5.jpg" alt="Люди идут по снежной тропе" width="298" height="179"
+                    loading="lazy">
+                </picture>
+                <picture data-photo="photo-bottom">
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_6.webp, ./img/gallery/photo_6@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_6.jpg 1x, ./img/gallery/photo_6@2x.jpg 2x">
+                  <img src="./img/gallery/photo_6.jpg" alt="Палатка на фоне ночного неба" width="298" height="265"
+                    loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="./img/gallery/photo_7.webp, ./img/gallery/photo_7@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_7.jpg 1x, ./img/gallery/photo_7@2x.jpg 2x">
+                  <img src="./img/gallery/photo_7.jpg" alt="Двое мужчин на фоне озера в горах" width="276" height="448"
+                    loading="lazy">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--form block-->
+      <section class="form" id="form">
+        <div class="form__container container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+          <div class="form__feedback" data-form-validate="data-form-validate" data-callback="base">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                <div class="form__custom-input" data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению" data-message-extra="Ошибка заполнения поля"
+                  data-required="data-required">
+                  <label for="user-name"><span class="visually-hidden">Введите ваше имя</span>
+                    <input id="user-name" type="text" name="userName" placeholder="Как к вам обращаться?">
+                  </label>
+                </div>
+                <div class="form__custom-input" data-validate-type="phone"
+                  data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Ошибка заполнения поля" data-message-success="Поле заполнено верно"
+                  data-required="data-required">
+                  <label for="user-phone"><span class="visually-hidden">Введите ваше телефон</span>
+                    <input id="user-phone" type="tel" name="userPhone" placeholder="Телефон" pattern="[0-9]{1,20}">
+                  </label>
+                </div>
+                <button type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/form/form-bgn-desk.webp 1x, ./img/form/form-bgn-desk@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/form/form-bgn-tablet.webp 1x, ./img/form/form-bgn-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)"
+            srcset="./img/form/form-bgn-mobile.webp 1x, ./img/form/form-bgn-mobile@2x.webp 2x"> -->
+          <source media="(min-width: 1200px)"
+            srcset="./img/form/form-bgn-desk.jpg 1x, ./img/form/form-bgn-desk@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/form/form-bgn-tablet.jpg 1x, ./img/form/form-bgn-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px)"
+              srcset="./img/form/form-bgn-mobile.jpg 1x, ./img/form/form-bgn-mobile@2x.jpg 2x">
+          <img src="./img/form/form-bgn-desk.jpg" alt="Фотография зимнего леса" width="1440"
+              height="800" loading="lazy">
+        </picture>
+      </section>
+
+      <!--contacts block-->
+      <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__wrapper">
+            <div class="contacts__header">
+              <h2 data-shadow="Контакты">Контакты</h2>
+              <p>Свяжитесь с нами любым удобным для вас способом или&nbsp;приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <svg width="26" height="26" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                <p>Телефон</p>
+                <a href="tel:89837454545" aria-label="Наш номер">8 983 745 45 45</a>
+              </li>
+              <li class="contacts__item">
+                <svg width="26" height="26" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-email"></use>
+                </svg>
+                <p>E-mail</p>
+                <a href="mailto:info@lifetour.com" aria-label="Наша почта">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item">
+                <svg width="26" height="26" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#icon-pin-contact"></use>
+                </svg>
+                <p>Адрес</p>
+                <a href="#" target="_blank" rel="noopener">г. Москва, пр-т Мира, д. 14, офис 101</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map map">
+
+          </div>
+        </div>
       </section>
 
 

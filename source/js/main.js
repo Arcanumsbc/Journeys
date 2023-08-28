@@ -8,7 +8,7 @@ import {initToursSlider} from './vendor/init-slider';
 import {initInstructorsSlider} from './vendor/init-slider';
 import {initRewiewsSlider} from './vendor/init-slider';
 import {initAdvantagesSlider} from './vendor/init-slider';
-
+import {initGallerySlider} from './vendor/init-slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initAdvantagesSlider();
+
   // Modules
   // ---------------------------------
 
@@ -37,6 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
     addVideoPlayer();
     addAudioPlayer();
     initRewiewsSlider();
+    initAdvantagesSlider();
+    initGallerySlider();
   });
 });
 

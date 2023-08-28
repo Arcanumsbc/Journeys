@@ -184,5 +184,28 @@ const initAdvantagesSlider = () => {
   return advantagesCreateSlider(createSlider);
 };
 
+const initGallerySlider = () => {
+  const galleryContainer = document.querySelector('.gallery__slider');
+  const galleryControl = document.querySelector('.gallery__arrows');
 
-export { initHeroSlider, initToursSlider, initInstructorsSlider, initRewiewsSlider, initAdvantagesSlider };
+  galleryControl.removeAttribute('data-nojs');
+
+  const gallerySlider = new Swiper(galleryContainer, {
+    allowTouchMove: isMobile(),
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 5,
+    speed: 300,
+    simulateTouch: true,
+
+    navigation: {
+      nextEl: '.gallery__arrows-next',
+      prevEl: '.gallery__arrows-prev',
+    },
+  });
+
+  return gallerySlider;
+};
+
+
+export { initHeroSlider, initToursSlider, initInstructorsSlider, initRewiewsSlider, initAdvantagesSlider, initGallerySlider };

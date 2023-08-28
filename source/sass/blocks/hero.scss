@@ -317,6 +317,10 @@
   fill: $color-default-white;
 }
 
+.hero__media[data-video="is-enabled"] button {
+  display: block;
+}
+
 .hero__media--kamchatka {
   top: 202px;
   width: 410px;
