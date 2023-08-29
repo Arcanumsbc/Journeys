@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 85px;
 
   > picture {
     position: absolute;
@@ -16,31 +16,38 @@
       height: 100%;
       width: 100%;
     }
+
+    @include vp-1199 {
+      & img {
+        object-fit: contain;
+        object-position: top;
+      }
+    }
   }
 
   @include vp-1199 {
-    margin-bottom: 130px;
+    margin-bottom: 88px;
     min-height: auto;
   }
 
   @include vp-767 {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 }
 
 .form__container {
-  padding: 308px 120px 307px;
+  padding: 306px 120px 305px;
   text-align: center;
   display: flex;
   flex-direction: column;
 
   @include vp-1199 {
     align-items: center;
-    padding: 192px 235px 183px;
+    padding: 190px 235px 183px;
   }
 
   @include vp-767 {
-    padding: 181px 15px 175px;
+    padding: 174px 15px 175px;
   }
 }
 
@@ -55,9 +62,12 @@
   width: 100%;
   position: relative;
   text-align: center;
+  padding-right: 17px;
+  transform: translateY(6px);
 
   @include vp-1199 {
-    margin-bottom: 15px;
+    margin-bottom: 21px;
+    padding-right: 0;
     font-size: $fz-xxsmedium;
     line-height: $lh-xxsmedium;
   }
@@ -76,20 +86,23 @@
   line-height: $lh-xxmedium;
   color: $color-default-white;
   margin: 0;
-  padding-bottom: 42px;
+  padding-right: 17px;
+  padding-bottom: 44px;
   text-align: center;
+  transform: translateY(4px);
 
   @include vp-1199 {
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
-    padding-bottom: 30px;
+    padding-right: 0;
+    padding-bottom: 33px;
   }
 
   @include vp-767 {
     font-size: $fz-small;
     line-height: $lh-xxxsmall;
     max-width: 100%;
-    padding-bottom: 26px;
+    padding-bottom: 31px;
   }
 }
 
@@ -145,7 +158,7 @@
     color: rgba($color-elephant, 0.5);
     cursor: text;
     outline: none;
-    padding: 22px 30px;
+    padding: 22px 30px 21px;
 
     &:hover {
       color: $color-navy-blue;
@@ -164,7 +177,7 @@
     }
 
     @include vp-1199 {
-      padding: 18px 15px;
+      padding: 15px 15px;
       min-height: 50px;
       min-width: 266px;
       width: 100%;
@@ -173,7 +186,7 @@
     }
 
     @include vp-767 {
-      padding: 18px 15px;
+      padding: 15px 15px;
       min-width: 290px;
     }
   }
@@ -231,7 +244,7 @@
   color: $color-default-white;
   min-width: 238px;
   min-height: 64px;
-  padding: 24px 9px;
+  padding: 24px 9px 22px;
   background-color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
   cursor: pointer;
@@ -254,7 +267,8 @@
   }
 
   @include vp-1199 {
-    padding: 21px 23px;
+    margin-top: 8px;
+    padding: 21px 23px 19px;
     min-height: 50px;
     min-width: 266px;
     font-size: $fz-xxsmall;
@@ -262,7 +276,8 @@
   }
 
   @include vp-767 {
-    padding: 21px 23px;
+    margin-top: 1px;
+    padding: 18px 23px 16px;
     min-width: 290px;
   }
 }

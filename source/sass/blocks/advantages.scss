@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  margin-bottom: 107px;
+  margin-bottom: 130px;
 
   > picture {
     position: absolute;
@@ -14,11 +14,11 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 70px;
+    margin-bottom: 89px;
   }
 
   @include vp-767 {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 }
 
@@ -47,7 +47,7 @@
   width: 100%;
   position: relative;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 
   &::before {
     content: attr(data-shadow);
@@ -76,13 +76,13 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 26px;
+    margin-bottom: 45px;
     font-size: $fz-xxsmedium;
     line-height: $lh-xxsmedium;
   }
 
   @include vp-767 {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
     font-size: $fz-xsmedium;
     line-height: $lh-xsmedium;
   }
@@ -90,7 +90,7 @@
 
 .advantages__slider {
   overflow: visible;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   width: 2000px;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@
   }
 
   @include vp-767 {
-    gap: 15px;
+    gap: 12px;
   }
 }
 
@@ -132,7 +132,7 @@
   @include vp-1199 {
     min-width: 324px;
     width: calc(47% + 5px);
-    padding: 30px 20px;
+    padding: 30px 20px 27px;
   }
 
   @include vp-767 {
@@ -170,6 +170,7 @@
   @include vp-1199 {
     width: 48px;
     height: 48px;
+    margin-bottom: 26px;
 
     & svg {
       top: 13px;
@@ -219,6 +220,8 @@
 }
 
 .advantages__arrows {
+  transform: translateX(0);
+
   @include vp-1199 {
     display: none;
   }

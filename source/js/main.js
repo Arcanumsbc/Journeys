@@ -9,6 +9,7 @@ import {initInstructorsSlider} from './vendor/init-slider';
 import {initRewiewsSlider} from './vendor/init-slider';
 import {initAdvantagesSlider} from './vendor/init-slider';
 import {initGallerySlider} from './vendor/init-slider';
+import {initContactsMap} from './modules/map/map';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -39,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initRewiewsSlider();
     initAdvantagesSlider();
     initGallerySlider();
+    initContactsMap();
   });
 });
 

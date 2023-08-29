@@ -1,13 +1,13 @@
 .contacts {
   position: relative;
-  margin-bottom: 104px;
+  margin-bottom: 102px;
 
   @include vp-1199 {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
@@ -17,8 +17,6 @@
   width: 100%;
   max-width: 1440px;
   justify-content: space-between;
-  // margin: 0 auto;
-  // padding: 0;
 
   @include vp-1279 {
     padding: 0 20px;
@@ -26,6 +24,7 @@
 
   @include vp-1199 {
     padding: 0 45px;
+    flex-direction: column;
   }
 
   @include vp-767 {
@@ -36,6 +35,16 @@
 .contacts__wrapper {
   min-width: 485px;
   width: calc(47% - 5px);
+
+  @include vp-1199 {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    min-width: auto;
+    margin-bottom: 24px;
+  }
 }
 
 .contacts__header h2 {
@@ -45,7 +54,7 @@
   line-height: $lh-big;
   color: $color-elephant;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   width: 100%;
   position: relative;
 
@@ -74,13 +83,13 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     font-size: $fz-xxsmedium;
     line-height: $lh-xxsmedium;
   }
 
   @include vp-767 {
-    margin-bottom: 31px;
+    margin-bottom: 11px;
     font-size: $fz-xsmedium;
     line-height: $lh-xsmedium;
   }
@@ -92,22 +101,22 @@
   font-size: $fz-xxsmall;
   line-height: $lh-xxmedium;
   color: $color-elephant;
-  // max-width: 700px;
   margin: 0;
   padding-bottom: 50px;
 
   @include vp-1199 {
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
-    max-width: 460px;
-    padding-bottom: 37px;
+    max-width: 485px;
+    padding-bottom: 38px;
   }
 
   @include vp-767 {
-    font-size: $fz-small;
-    line-height: $lh-xxxsmall;
+    font-size: $fz-xsmall;
+    line-height: $lh-smedium;
     max-width: 100%;
-    padding-bottom: 15px;
+    margin-right: 8px;
+    padding-bottom: 30px;
   }
 }
 
@@ -118,11 +127,24 @@
   display: flex;
   flex-direction: column;
   gap: 35px 0;
+
+  @include vp-1199 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0 44px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 25px 0;
+  }
 }
 
 .contacts__item {
   position: relative;
-
   padding-left: 56px;
 
   & svg {
@@ -148,13 +170,58 @@
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
   }
+
+  @include vp-1199 {
+    padding-left: 34px;
+
+    & svg {
+      top: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    & p {
+      font-size: $fz-xxsmall;
+      line-height: $lh-xxsmall;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+
+    & a {
+      font-size: $fz-xsmall;
+      line-height: $lh-xsmedium;
+    }
+  }
+
+  @include vp-767 {
+    padding-left: 32px;
+    padding-right: 90px;
+
+    & svg {
+      width: 22px;
+      height: 22px;
+      top: 0;
+    }
+
+    & p {
+      font-size: $fz-xsmall;
+      line-height: $lh-xsmall;
+      margin: 0;
+      padding-bottom: 8px;
+    }
+
+    & a {
+      font-size: $fz-xsmall;
+      line-height: $lh-smedium;
+    }
+  }
 }
 
 .contacts__map {
   width: 585px;
   height: 324px;
   flex-shrink: 0;
-  margin: 75px 0 0;
+  margin-top: 75px;
 
   @include vp-1199 {
     margin: 0;

@@ -117,6 +117,7 @@ const initRewiewsSlider = () => {
     allowTouchMove: isMobile(),
     slidesPerView: 'auto',
     initialslide: 2,
+    autoHeight: true,
     spaceBetween: 30,
     speed: 300,
     simulateTouch: true,
