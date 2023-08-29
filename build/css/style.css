@@ -2997,6 +2997,38 @@ button,
   fill: #ffffff;
 }
 
+.hero__media-button.audio__play {
+  top: 71%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+}
+.hero__media-button.audio__play svg {
+  width: 48px;
+  height: 48px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  fill: #1c3374;
+}
+@media (hover: hover) {
+  .hero__media-button.audio__play:hover:not(.focus-visible) svg {
+    stroke: #ffffff;
+    fill: #0266c1;
+  }
+  .hero__media-button.audio__play:hover:not(.focus-visible):active {
+    background-color: #0266c1;
+  }
+}
+.hero__media-button.audio__play.focus-visible:focus svg {
+  stroke: #ffffff;
+  fill: #0266c1;
+}
+.hero__media-button.audio__play.focus-visible:focus:active {
+  background-color: #0266c1;
+}
+
 .hero__media[data-video=is-enabled] button {
   display: block;
 }

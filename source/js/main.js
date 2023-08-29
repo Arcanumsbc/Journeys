@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initHeroSlider} from './vendor/init-slider';
-import {addVideoPlayer, addAudioPlayer} from './vendor/iframe';
+import {initVideoPlayer, initAudioPlayer} from './vendor/iframe';
 import {Burger} from './modules/menu/burger';
 import {initToursSlider} from './vendor/init-slider';
 import {initInstructorsSlider} from './vendor/init-slider';
@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initVideoPlayer();
+  initAudioPlayer();
 
   // Modules
   // ---------------------------------
@@ -35,8 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initToursSlider();
     initInstructorsSlider();
-    addVideoPlayer();
-    addAudioPlayer();
     initRewiewsSlider();
     initAdvantagesSlider();
     initGallerySlider();
