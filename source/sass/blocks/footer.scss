@@ -65,11 +65,11 @@
       color: $color-resolution-blue;
 
       &:active {
-      color: $color-navy-blue;
+        color: $color-navy-blue;
       }
 
       &:disabled {
-      background-color: rgba($color-navy-blue, 0.1);
+        background-color: rgba($color-navy-blue, 0.1);
       }
     }
   }
@@ -81,7 +81,7 @@
 
     & a {
       font-size: $fz-xsmall;
-      line-height:$lh-xsmall;
+      line-height: $lh-xsmall;
     }
   }
 
@@ -98,7 +98,7 @@
     & a {
       width: 100%;
       font-size: $fz-xsmall;
-      line-height:$lh-xsmall;
+      line-height: $lh-xsmall;
     }
   }
 }

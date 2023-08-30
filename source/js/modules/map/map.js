@@ -1,29 +1,32 @@
-import {map as createMap, tileLayer as createTitleLayers, icon as createIcon, marker as createMarker} from '../../vendor/leaflet';
+const ymaps = window.ymaps;
+
+function initMap() {
+  const coordinate = [55.774836, 37.632664];
+  let createMap = new ymaps.Map('map', {
+    center: coordinate,
+    zoom: 16});
+
+  let createPlacemark = new ymaps.Placemark(coordinate, {}, {
+    hintContent: 'Собственный значок метки',
+    iconLayout: 'default#image',
+    iconImageHref: './img/svg/map-pin.svg',
+    iconImageSize: [48, 48],
+    iconImageOffset: [-20, -15]});
+
+  createMap.controls.remove('geolocationControl');
+  createMap.controls.remove('searchControl');
+  createMap.controls.remove('trafficControl');
+  createMap.controls.remove('fullscreenControl');
+  createMap.controls.remove('rulerControl');
+  createMap.behaviors.disable(['scrollZoom']);
+
+  createMap.geoObjects.add(createPlacemark);
+}
 
 const initContactsMap = () => {
   if (document.querySelector('#map')) {
     document.querySelector('#map').querySelector('picture').remove();
-
-    const coordinate = [55.774888415546656, 37.632586886490785];
-    const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    const markerText = `
-<p>г. Москва, пр-т Мира, д. 14, офис 101</p>
-<p>Номер телефона: <a href="tel:89837454545">8 983 745 45 45</a></p>
-`;
-
-    const map = createMap('map', {
-      center: coordinate,
-      zoom: 16,
-      scrollWheelZoom: false,
-    });
-
-    const icon = createIcon({
-      iconUrl: './img/svg/map-pin.svg',
-      iconSize: [48, 48],
-    });
-
-    createTitleLayers(url).addTo(map);
-    createMarker(coordinate, {icon}).bindPopup(markerText).addTo(map);
+    ymaps.ready(initMap);
   }
 };
 

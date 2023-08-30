@@ -136,8 +136,8 @@
 
   @include vp-767 {
     img {
-        width: 159px;
-        height: 259px;
+      width: 159px;
+      height: 259px;
     }
 
     & [data-photo="photo-top"] {
@@ -167,4 +167,3 @@
     justify-content: flex-end;
   }
 }
-
