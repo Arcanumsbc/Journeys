@@ -1775,12 +1775,9 @@ button,
 }
 
 .hero__bg-photo img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: bottom;
-  object-position: bottom;
+  -o-object-fit: fill;
+  object-fit: fill;
   height: 100%;
-  width: 100%;
 }
 
 .hero__inner {

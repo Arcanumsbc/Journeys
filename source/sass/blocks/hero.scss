@@ -63,10 +63,10 @@
   position: absolute;
 
   & img {
-    object-fit: cover;
-    object-position: bottom;
+    object-fit: fill;
+    // object-position: bottom;
     height: 100%;
-    width: 100%;
+    // width: 100%;
   }
 }
 

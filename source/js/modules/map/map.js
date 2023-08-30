@@ -1,4 +1,4 @@
-const ymaps = window.ymaps;
+let ymaps = window.ymaps;
 
 function initMap() {
   const coordinate = [55.774836, 37.632664];

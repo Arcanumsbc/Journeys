@@ -1,15 +1,18 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initHeroSlider} from './vendor/init-slider';
-import {initVideoPlayer, initAudioPlayer} from './vendor/iframe';
+import './utils/scroll-lock';
+
+import {initHeroSlider} from './modules/hero/slider';
+import {initVideoPlayer} from './modules/hero/video';
+import {initAudioPlayer} from './modules/hero/audio';
 import {Burger} from './modules/menu/burger';
-import {initToursSlider} from './vendor/init-slider';
-import {initInstructorsSlider} from './vendor/init-slider';
-import {initRewiewsSlider} from './vendor/init-slider';
-import {initAdvantagesSlider} from './vendor/init-slider';
-import {initGallerySlider} from './vendor/init-slider';
-import {initContactsMap} from './modules/map/map';
+import {initToursSlider} from './modules/tours/slider';
+import {initInstructorsSlider} from './modules/instructors/slider';
+import {initRewiewsSlider} from './modules/rewiews/slider';
+import {initAdvantagesSlider} from './modules/advantages/slider';
+import {initGallerySlider} from './modules/gallery/slider';
+// import {initContactsMap} from './modules/map/map';
+import {getHeight} from './modules/hero/indent';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initVideoPlayer();
-  initAudioPlayer();
 
   // Modules
   // ---------------------------------
@@ -27,7 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+    getHeight();
+
+    initVideoPlayer();
+    initAudioPlayer();
     const form = new Form();
     window.form = form;
     form.init();
@@ -40,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initRewiewsSlider();
     initAdvantagesSlider();
     initGallerySlider();
-    initContactsMap();
+    // initContactsMap();
   });
 });
 
