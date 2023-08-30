@@ -1,5 +1,4 @@
 build/*.js
 source/js/vendor/*.js
-source/sass/vendor/leaflet.scss
 gulpfile.js
 webpack.config.cjs
