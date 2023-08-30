@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import './vendor/swiper';
 import './utils/scroll-lock';
 
 import {initHeroSlider} from './modules/hero/slider';
@@ -11,7 +12,7 @@ import {initInstructorsSlider} from './modules/instructors/slider';
 import {initRewiewsSlider} from './modules/rewiews/slider';
 import {initAdvantagesSlider} from './modules/advantages/slider';
 import {initGallerySlider} from './modules/gallery/slider';
-// import {initContactsMap} from './modules/map/map';
+import {initContactsMap} from './modules/map/map';
 import {getHeight} from './modules/hero/indent';
 // ---------------------------------
 
@@ -44,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initRewiewsSlider();
     initAdvantagesSlider();
     initGallerySlider();
-    // initContactsMap();
+    initContactsMap();
   });
 });
 
