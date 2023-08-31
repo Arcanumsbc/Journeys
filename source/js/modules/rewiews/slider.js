@@ -10,7 +10,7 @@ const initRewiewsSlider = () => {
   const rewiewsSlider = new Swiper(rewiewsContainer, {
     allowTouchMove: isMobile(),
     slidesPerView: 'auto',
-
+    autoHeight: true,
     spaceBetween: 30,
     speed: 300,
 

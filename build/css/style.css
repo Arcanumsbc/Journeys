@@ -5921,7 +5921,7 @@ button,
     width: 250px;
     min-height: 385px;
     padding: 20px;
-    height: auto;
+    height: 100%;
   }
 
   .instructors__header-container a {
