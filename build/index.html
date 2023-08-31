@@ -18,6 +18,8 @@
   <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preconnect" href="//api-maps.yandex.ru">
+	<link rel="dns-prefetch" href="//api-maps.yandex.ru">
 
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -59,12 +61,12 @@
           <div class="main-header__contact">
             <a href="tel:88007253232" aria-label="Позвонить нам">8 800 725 32 32</a>
           </div>
-          <button class="main-header__button-menu burger" type="button" data-burger="data-burger">
+          <button class="main-header__button-menu burger" type="button" data-burger="data-burger" aria-label="Кнопка открытия меню.">
             <svg class="burger__open" width="26" height="26" aria-hidden="true">
               <use xlink:href="./img/sprite.svg#icon-menu"></use>
             </svg>
 
-            <svg class="burger__closed" width="26" height="26" aria-hidden="true">
+            <svg class="burger__closed" width="26" height="26" aria-hidden="true" >
               <use xlink:href="./img/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -1221,6 +1223,26 @@
                     loading="lazy">
                 </picture>
               </li>
+              <li class="gallery__item swiper-slide">
+                <picture data-photo="photo-top">
+                  <source type="image/webp" srcset="./img/gallery/photo_2.webp, ./img/gallery/photo_2@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_2.jpg 1x, ./img/gallery/photo_2@2x.jpg 2x">
+                  <img src="./img/gallery/photo_2.jpg" alt="Люди у костра" width="298" height="179" loading="lazy">
+                </picture>
+                <picture data-photo="photo-bottom">
+                  <source type="image/webp" srcset="./img/gallery/photo_3.webp, ./img/gallery/photo_3@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_3.jpg 1x, ./img/gallery/photo_3@2x.jpg 2x">
+                  <img src="./img/gallery/photo_3.jpg" alt="Рука держащая компас на фоне гор" width="298" height="265"
+                    loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/gallery/photo_4.webp, ./img/gallery/photo_4@2x.webp 2x">
+                  <source srcset="./img/gallery/photo_4.jpg 1x, ./img/gallery/photo_4@2x.jpg 2x">
+                  <img src="./img/gallery/photo_4.jpg" alt="Люди идут по горам" width="272" height="449" loading="lazy">
+                </picture>
+              </li>
             </ul>
           </div>
         </div>
@@ -1394,9 +1416,9 @@
     </footer>
   </div>
 
-  <script src="js/vendor.min.js"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&onload=getYaMap;apikey=51b4ddd2-c393-4c68-a443-26f36cf1bc1e"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=51b4ddd2-c393-4c68-a443-26f36cf1bc1e"></script>
   <script src="js/main.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU;apikey=51b4ddd2-c393-4c68-a443-26f36cf1bc1e"></script>
 </body>
 
 </html>

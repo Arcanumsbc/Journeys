@@ -15,7 +15,6 @@ const initAdvantagesSlider = () => {
         slidesPerView: 'auto',
         spaceBetween: 30,
         speed: 300,
-        simulateTouch: true,
         loop: true,
         navigation: {
           nextEl: '.advantages__arrows-next',

@@ -10,11 +10,7 @@ const initToursSlider = () => {
 
   const tourslider = new Swiper(toursContainer, {
     allowTouchMove: isMobile(),
-    initialslide: 0,
     speed: 300,
-    loop: false,
-    autoHeight: true,
-    simulateTouch: true,
 
     breakpoints: {
 

@@ -10,10 +10,7 @@ const initInstructorsSlider = () => {
 
   const instructorsSlider = new Swiper(instructorsContainer, {
     allowTouchMove: isMobile(),
-    initialslide: 0,
     speed: 300,
-    loop: false,
-    simulateTouch: true,
 
     breakpoints: {
 

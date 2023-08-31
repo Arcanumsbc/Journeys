@@ -10,10 +10,8 @@ const initGallerySlider = () => {
   const gallerySlider = new Swiper(galleryContainer, {
     allowTouchMove: isMobile(),
     slidesPerView: 'auto',
-    loop: true,
     spaceBetween: 5,
     speed: 300,
-    simulateTouch: true,
 
     navigation: {
       nextEl: '.gallery__arrows-next',

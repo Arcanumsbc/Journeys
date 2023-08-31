@@ -1,4 +1,6 @@
 .burger {
+  display: none;
+
   @include vp-1199 {
     position: relative;
     display: block;

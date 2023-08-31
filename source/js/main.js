@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import './vendor/swiper';
 import './utils/scroll-lock';
 
 import {initHeroSlider} from './modules/hero/slider';
@@ -13,7 +12,6 @@ import {initRewiewsSlider} from './modules/rewiews/slider';
 import {initAdvantagesSlider} from './modules/advantages/slider';
 import {initGallerySlider} from './modules/gallery/slider';
 import {initContactsMap} from './modules/map/map';
-import {getHeight} from './modules/hero/indent';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,23 +20,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  const burger = new Burger();
+  window.burger = burger;
+  burger.init();
   // Modules
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    getHeight();
+    // getHeight();
 
     initVideoPlayer();
     initAudioPlayer();
     const form = new Form();
     window.form = form;
     form.init();
-    const burger = new Burger();
-    window.burger = burger;
-    burger.init();
+
     initHeroSlider();
     initToursSlider();
     initInstructorsSlider();
