@@ -1,7 +1,6 @@
 .nav {
   @include vp-1199 {
     display: flex;
-    flex-wrap: nowrap;
     position: absolute;
     width: 100%;
     min-height: 420px;
@@ -18,7 +17,9 @@
       overflow-y: auto;
       flex-direction: column;
       row-gap: 26px;
+      flex-wrap: nowrap;
       width: 100%;
+      max-height: 50vh;
       background-color: $color-default-white;
 
       @include vp-767 {

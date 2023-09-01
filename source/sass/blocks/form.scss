@@ -6,7 +6,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    min-height: 800px;
+    // min-height: 800px;
     height: 100%;
     top: 0;
     left: 0;
@@ -19,8 +19,7 @@
 
     @include vp-1199 {
       & img {
-        object-fit: contain;
-        object-position: top;
+        object-fit: fill;
       }
     }
   }
@@ -36,14 +35,19 @@
 }
 
 .form__container {
-  padding: 306px 120px 305px;
+  padding-top: 306px;
+  padding-bottom: 305px;
   text-align: center;
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
   flex-direction: column;
 
   @include vp-1199 {
     align-items: center;
-    padding: 190px 235px 183px;
+    padding-top: 190px;
+    padding-bottom: 183px;
   }
 
   @include vp-767 {
@@ -92,6 +96,7 @@
   transform: translateY(4px);
 
   @include vp-1199 {
+    max-width: 50%;
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
     padding-right: 0;
@@ -106,28 +111,40 @@
   }
 }
 
-.form__feedback fieldset {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  min-width: 960px;
+.form__feedback {
   width: 100%;
-  column-gap: 30px;
-  margin: 0;
-  padding: 0;
-  border: none;
+
+  & fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 960px;
+    width: 100%;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 
   &::-webkit-input-placeholder {
     color: rgba($color-elephant, 0.5);
   }
 
   @include vp-1199 {
-    min-width: 100%;
-    width: auto;
-    flex-direction: column;
-    row-gap: 7px;
-    column-gap: 0;
-    align-items: center;
+    width: 100%;
+    padding: 0 206px;
+
+    & fieldset {
+      flex-direction: column;
+      min-width: 266px;
+      row-gap: 7px;
+      column-gap: 0;
+      align-items: stretch;
+    }
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 
@@ -179,7 +196,7 @@
     @include vp-1199 {
       padding: 15px 15px;
       min-height: 50px;
-      min-width: 266px;
+      min-width: 100%;
       width: 100%;
       font-size: $fz-xsmall;
       line-height: $lh-xsmall;

@@ -11,7 +11,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  column-gap: 15px;
+  gap: 5px 15px;
+  max-width: 290px;
+  flex-wrap: wrap;
 }
 
 .social__item {
