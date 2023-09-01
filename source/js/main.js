@@ -2,10 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import './utils/scroll-lock';
 
+import {Burger} from './modules/menu/burger';
 import {initHeroSlider} from './modules/hero/slider';
 import {initVideoPlayer} from './modules/hero/video';
 import {initAudioPlayer} from './modules/hero/audio';
-import {Burger} from './modules/menu/burger';
 import {initToursSlider} from './modules/tours/slider';
 import {initInstructorsSlider} from './modules/instructors/slider';
 import {initRewiewsSlider} from './modules/rewiews/slider';
@@ -30,12 +30,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
     const burger = new Burger();
     window.burger = burger;
     burger.init();
+
+    initHeroSlider();
     initVideoPlayer();
     initAudioPlayer();
-    initHeroSlider();
     initToursSlider();
     initInstructorsSlider();
     initRewiewsSlider();
