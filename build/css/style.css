@@ -2474,7 +2474,6 @@ button,
 .hero__bg-photo img {
   -o-object-fit: fill;
   object-fit: fill;
-  height: 100%;
   width: 100%;
 }
 
