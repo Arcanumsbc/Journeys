@@ -1,7 +1,8 @@
 .hero {
   margin-top: -102px;
-  width: 100%;
   margin-bottom: 123px;
+  background-color: $color-elephant;
+  color: $color-default-white;
 
   @include vp-1199 {
     margin-top: -104px;
@@ -14,23 +15,6 @@
   }
 }
 
-.hero__slider {
-  width: 100%;
-  min-height: 800px;
-  height: 100%;
-  background-color: $color-elephant;
-
-  @include vp-1199 {
-    min-height: 1024px;
-    height: 100%;
-  }
-
-  @include vp-767 {
-    min-height: 568px;
-    height: 100%;
-  }
-}
-
 .hero__list {
   margin: 0;
   padding: 0;
@@ -39,19 +23,8 @@
 }
 
 .hero__item {
-  position: relative;
-  margin: 0 auto;
-  min-height: 800px;
-
-  @include vp-1199 {
-    min-height: 1024px;
-    height: 100%;
-  }
-
-  @include vp-767 {
-    min-height: 568px;
-    height: 100%;
-  }
+  height: auto;
+  display: flex;
 }
 
 .hero__bg-photo {
@@ -62,9 +35,19 @@
   z-index: -1;
   position: absolute;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: $gradient-overlay;
+    inset: 0;
+  }
+
   & img {
     object-fit: fill;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -76,7 +59,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 81px;
 
   @include vp-1279 {
     padding: 0 20px;
@@ -87,12 +70,12 @@
     padding: 0 45px;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 90px;
+    padding-bottom: 153px;
   }
 
   @include vp-767 {
     padding: 0 15px;
-    padding-bottom: 40px;
+    padding-bottom: 102px;
   }
 }
 
@@ -119,7 +102,6 @@
   font-weight: $fw-extra-bold;
   font-size: $fz-xxxllarge;
   line-height: $lh-xxxllarge;
-  color: $color-default-white;
   margin: 0;
   margin-bottom: 23px;
   margin-right: auto;
@@ -151,7 +133,6 @@
   font-weight: $fw-regular;
   font-size: $fz-xxssmall;
   line-height: $lh-xxmedium;
-  color: $color-default-white;
   width: 470px;
   margin: 0;
   margin-bottom: 37px;

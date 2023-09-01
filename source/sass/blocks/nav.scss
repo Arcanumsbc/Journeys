@@ -32,6 +32,30 @@
         row-gap: 22px;
       }
     }
+
+    & li {
+      & a {
+        margin-left: 1px;
+        border: 1px solid transparent;
+        color: $color-elephant;
+
+        @include hover {
+          color: $color-elephant;
+          border-bottom: 1px solid $color-elephant;
+
+          &:active {
+            color: $color-elephant;
+            border-bottom: none;
+          }
+        }
+
+        @include focus {
+          color: $color-elephant;
+          outline: 1px solid $color-elephant;
+          padding: 3px 5px;
+        }
+      }
+    }
   }
 
   @include vp-767 {
