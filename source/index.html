@@ -87,18 +87,15 @@
                 <div class="hero__media" data-video="is-enabled">
                   <div class="hero__media-wrapper video">
                     <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_1/hero-video-desk.webp 1x, ./img/hero/slide_1/hero-video-desk@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
+                      <source type="image/webp" media="(max-width: 1199px)"
                         srcset="./img/hero/slide_1/hero-video-tablet.webp 1x, ./img/hero/slide_1/hero-video-tablet@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_1/hero-video-desk.jpg 1x, ./img/hero/slide_1/hero-video-desk@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
+                      <source type="image/webp" srcset="./img/hero/slide_1/hero-video-desk.webp 1x, ./img/hero/slide_1/hero-video-desk@2x.webp 2x">
+                      <source media="(max-width: 1199px)"
                         srcset="./img/hero/slide_1/hero-video-tablet.jpg 1x, ./img/hero/slide_1/hero-video-tablet@2x.jpg 2x">
-                      <img src="./img/hero/slide_1/hero-video-desk.jpg" alt="Видео-презентация туров" width="482"
-                        height="317">
+                      <img src="./img/hero/slide_1/hero-video-desk.jpg" srcset="./img/hero/slide_1/hero-video-desk@2x.jpg 2x" alt="Видео-презентация туров" width="482"
+                        height="317" >
                     </picture>
-                    <button class="hero__media-button" type="button" aria-label="play">
+                    <button class="video__button" type="button" aria-label="play">
                       <svg width="12" height="22" aria-hidden="true">
                         <use xlink:href="./img/sprite.svg#icon-play"></use>
                       </svg>
@@ -152,15 +149,12 @@
                 <div class="hero__media hero__media--kamchatka">
                   <div class="hero__media-wrapper">
                     <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_2/hero-photo-cards-desk.webp 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
+                      <source type="image/webp" media="(max-width: 1199px)"
                         srcset="./img/hero/slide_2/hero-photo-cards-tablet.webp 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_2/hero-photo-cards-desk.png 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.png 2x">
-                      <source media="(min-width: 768px)"
+                      <source type="image/webp" srcset="./img/hero/slide_2/hero-photo-cards-desk.webp 1x, ./img/hero/slide_2/hero-photo-cards-desk@2x.webp 2x">
+                      <source media="(max-width: 1199px)"
                         srcset="./img/hero/slide_2/hero-photo-cards-tablet.png 1x, ./img/hero/slide_2/hero-photo-cards-tablet@2x.png 2x">
-                      <img src="./img/hero/slide_2/hero-photo-cards-desk.png" alt="Фотографии с восхождений" width="410"
+                      <img src="./img/hero/slide_2/hero-photo-cards-desk.png" srcset="./img/hero/slide_2/hero-photo-cards-desk@2x.png 2x" alt="Фотографии с восхождений" width="410"
                         height="459" loading="lazy">
                     </picture>
                   </div>
@@ -212,14 +206,11 @@
                 <div class="hero__media hero__media--altai">
                   <div class="hero__media-wrapper audio">
                     <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_3/hero-audio.webp 1x, ./img/hero/slide_3/hero-audio@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="./img/hero/slide_3/hero-audio.jpg 1x, ./img/hero/slide_3/hero-audio@2x.jpg 2x">
-                      <img src="./img/hero/slide_3/hero-audio.jpg" alt="Звуки гор Алтая" width="340" height="220"
+                      <source type="image/webp" srcset="./img/hero/slide_3/hero-audio.webp 1x, ./img/hero/slide_3/hero-audio@2x.webp 2x">
+                      <img src="./img/hero/slide_3/hero-audio.jpg" srcset="./img/hero/slide_3/hero-audio@2x.jpg 2x" alt="Звуки гор Алтая" width="340" height="220"
                         loading="lazy">
                     </picture>
-                    <button class="hero__media-button audio__play" type="button" aria-label="play">
+                    <button class="audio__button audio__play" type="button" aria-label="play">
                       <svg width="12" height="22" aria-hidden="true">
                         <use xlink:href="./img/sprite.svg#icon-play-audio"></use>
                       </svg>

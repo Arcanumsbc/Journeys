@@ -1,0 +1,58 @@
+.audio {
+  position: relative;
+  cursor: pointer;
+  width: 340px;
+  height: 220px;
+
+  @include vp-1199 {
+    top: 19px;
+  }
+}
+
+.audio img,
+.audio frame {
+  display: block;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.audio__button {
+  position: absolute;
+  bottom: 40px;
+  left: 140px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  touch-action: manipulation;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba($color-default-white, 0.2);
+
+  & svg {
+    width: 48px;
+    height: 48px;
+    fill: $color-resolution-blue;
+  }
+
+  @include hover-focus {
+    & svg {
+      stroke: $color-default-white;
+      fill: $color-navy-blue;
+    }
+
+    &:active {
+      & svg {
+        stroke: $color-default-white;
+        fill: $color-resolution-blue;
+      }
+    }
+  }
+}

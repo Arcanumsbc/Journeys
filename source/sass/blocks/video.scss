@@ -1,0 +1,74 @@
+.video {
+  position: relative;
+  cursor: pointer;
+  min-width: 482px;
+  min-height: 317px;
+  width: 100%;
+  height: 100%;
+
+  @include vp-1199 {
+    min-width: 442px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video img,
+.video iframe {
+  display: block;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  background-color: rgba($color-default-white, 0.2);
+  border: 1px solid $color-default-white;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  outline: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+
+  @include hover-focus {
+    border-color: $color-resolution-blue;
+
+    & svg {
+      stroke: $color-default-black;
+    }
+
+    &:active {
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    border-color: $color-navy-blue;
+
+    & svg {
+      fill: $color-navy-blue;
+    }
+  }
+}
+
+.video__button svg {
+  position: absolute;
+  transform: translateX(-25%) translateY(-50%);
+  width: 12px;
+  height: 22px;
+  fill: $color-default-white;
+}
