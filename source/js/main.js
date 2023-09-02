@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     window.burger = burger;
     burger.init();
-
     initHeroSlider();
     initVideoPlayer();
     initAudioPlayer();
