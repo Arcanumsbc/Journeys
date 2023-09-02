@@ -3,7 +3,7 @@
   margin-bottom: 90px;
 
   @include vp-1199 {
-    margin-bottom: 60px;
+    margin-bottom: 83px;
   }
 
   @include vp-767 {
@@ -130,6 +130,7 @@
     @include vp-1199 {
       font-size: $fz-xsmall;
       line-height: $lh-xsmedium;
+      padding-bottom: 8px;
     }
 
     @include vp-767 {

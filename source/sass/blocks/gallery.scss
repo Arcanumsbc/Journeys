@@ -135,6 +135,8 @@
   }
 
   @include vp-767 {
+    gap: 3px;
+
     img {
       width: 159px;
       height: 259px;

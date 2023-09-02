@@ -12,7 +12,11 @@ const initGallerySlider = () => {
     slidesPerView: 'auto',
     spaceBetween: 5,
     speed: 300,
-
+    breakpoints: {
+      320: {
+        spaceBetween: 3,
+      },
+    },
     navigation: {
       nextEl: '.gallery__arrows-next',
       prevEl: '.gallery__arrows-prev',

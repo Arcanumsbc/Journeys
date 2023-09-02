@@ -2603,7 +2603,7 @@ button,
   line-height: 12px;
   color: #ffffff;
   border: 1px solid #ffffff;
-  padding: 14px 20px 14px 40px;
+  padding: 14px 20px 14px 39px;
 }
 
 .hero__level,
@@ -2625,7 +2625,7 @@ button,
 }
 
 .hero__level svg {
-  left: 20px;
+  left: 19px;
   top: 15px;
   stroke: #ffffff;
   stroke-width: 2px;
@@ -3482,7 +3482,6 @@ button,
   padding: 20px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
-  min-height: 377px;
   height: auto;
 }
 
@@ -4925,9 +4924,9 @@ button,
   }
 
   .tours__group {
-    -webkit-transform: translateX(-2px);
-    -ms-transform: translateX(-2px);
-    transform: translateX(-2px);
+    -webkit-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    transform: translateX(3px);
   }
 
   .tours__background {
@@ -5069,9 +5068,7 @@ button,
 
   .instructors__item {
     width: 176px;
-    min-height: 411px;
     padding: 15px;
-    height: auto;
   }
 
   .instructors__header-container {
@@ -5084,7 +5081,7 @@ button,
   }
 
   .about {
-    margin-bottom: 60px;
+    margin-bottom: 83px;
   }
 
   .about__container {
@@ -5116,6 +5113,7 @@ button,
   .about__content ul p {
     font-size: 14px;
     line-height: 22px;
+    padding-bottom: 8px;
   }
 
   .about__background {
@@ -5728,9 +5726,9 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-column-gap: 13px;
-    -moz-column-gap: 13px;
-    column-gap: 13px;
+    -webkit-column-gap: 12px;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
   }
 
   .tours__complexity span,
@@ -5887,14 +5885,13 @@ button,
 
   .instructors__slider {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
   }
 
   .instructors__item {
     width: 250px;
-    min-height: 385px;
     padding: 20px;
-    height: 100%;
+    padding-bottom: 10px;
   }
 
   .instructors__header-container a {
@@ -5947,7 +5944,7 @@ button,
   }
 
   .rewiews {
-    margin-bottom: 64px;
+    margin-bottom: 68px;
   }
 
   .rewiews__container {
@@ -5967,6 +5964,10 @@ button,
     line-height: 22px;
   }
 
+  .rewiews__item picture {
+    padding-right: 2px;
+  }
+
   .rewiews__item img {
     width: 100%;
     height: auto;
@@ -5979,7 +5980,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 18px 15px 20px;
     min-height: 466px;
     height: 100%;
   }
@@ -6095,6 +6096,10 @@ button,
     margin: 0 -15px;
   }
 
+  .gallery__item {
+    gap: 3px;
+  }
+
   .gallery__item img {
     width: 159px;
     height: 259px;
@@ -6121,7 +6126,7 @@ button,
   }
 
   .form__container {
-    padding: 174px 15px 175px;
+    padding: 176px 15px 175px;
   }
 
   .form__container h2 {
