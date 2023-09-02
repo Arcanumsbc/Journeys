@@ -13,6 +13,9 @@ const initGallerySlider = () => {
     spaceBetween: 5,
     speed: 300,
     breakpoints: {
+      768: {
+        spaceBetween: 5,
+      },
       320: {
         spaceBetween: 3,
       },
