@@ -127,6 +127,7 @@
     height: 253px;
     object-position: bottom;
     object-fit: cover;
+    background-color: $color-elephant;
 
     @include vp-1199 {
       width: 186px;

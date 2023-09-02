@@ -4,7 +4,6 @@
 
 .gallery__container {
   width: 100%;
-  // max-width: 1440px;
   padding: 0;
 
   @include vp-1279 {
@@ -132,6 +131,7 @@
   & img {
     object-fit: fill;
     height: auto;
+    background-color: $color-elephant;
   }
 
   @include vp-767 {

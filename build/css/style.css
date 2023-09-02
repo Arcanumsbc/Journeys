@@ -2833,6 +2833,11 @@ button,
   fill: #ffffff;
 }
 
+.arrows button svg {
+  width: 14px;
+  height: 8px;
+}
+
 .arrows button.focus-visible:focus {
   border-color: #1c3374;
   background-color: transparent;
@@ -2974,6 +2979,7 @@ button,
   object-position: bottom;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #2d383f;
 }
 
 .tours__item picture {
@@ -3488,6 +3494,7 @@ button,
   object-position: bottom;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #2d383f;
 }
 
 .instructors__header-container {
@@ -3729,6 +3736,7 @@ button,
   object-position: bottom;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #2d383f;
 }
 
 .rewiews__content {
@@ -3997,6 +4005,7 @@ button,
   -o-object-fit: fill;
   object-fit: fill;
   height: auto;
+  background-color: #2d383f;
 }
 
 .gallery__arrows {
@@ -4024,6 +4033,7 @@ button,
   object-fit: cover;
   height: 100%;
   width: 100%;
+  background-color: #2d383f;
 }
 
 .form__container {

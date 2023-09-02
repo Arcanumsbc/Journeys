@@ -14,6 +14,11 @@
   height: 35px;
   fill: $color-default-white;
 
+  & svg {
+    width: 14px;
+    height: 8px;
+  }
+
   @include hover-focus {
     border-color: $color-resolution-blue;
     background-color: transparent;

@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-
     const burger = new Burger();
     window.burger = burger;
     burger.init();
