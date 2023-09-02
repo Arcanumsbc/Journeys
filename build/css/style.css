@@ -3717,7 +3717,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 40px 20px 20px;
+  padding: 20px 30px 20px 20px;
   max-width: 790px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
