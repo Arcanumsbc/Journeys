@@ -5,8 +5,6 @@ import './utils/scroll-lock';
 
 import {Burger} from './modules/menu/burger';
 import {initHeroSlider} from './modules/hero/slider';
-// import {initVideoPlayer} from './modules/hero/video';
-// import {initAudioPlayer} from './modules/hero/audio';
 import {initToursSlider} from './modules/tours/slider';
 import {initInstructorsSlider} from './modules/instructors/slider';
 import {initRewiewsSlider} from './modules/rewiews/slider';
@@ -22,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initHero();
   // Modules
   // ---------------------------------
 
@@ -35,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     window.burger = burger;
     burger.init();
+    initHero();
     initHeroSlider();
     initToursSlider();
     initInstructorsSlider();
