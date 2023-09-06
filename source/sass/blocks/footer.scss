@@ -187,6 +187,10 @@
   font-size: $fz-xxxsmall;
   line-height: $lh-xxxsmall;
   transform: translateX(-1px) translateY(0);
+  width: 100%;
+  max-width: 142px;
+  display: flex;
+  flex-wrap: wrap;
 
   & a {
     color: $color-elephant;
