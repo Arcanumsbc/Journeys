@@ -35,4 +35,4 @@ jobs:
         with:
           token: AZWH422AEX4QMXHAGTFZ6STE7DK2C
           folder: ./build
-          branch: main
+          branch: gh-pages
