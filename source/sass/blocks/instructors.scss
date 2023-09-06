@@ -153,6 +153,7 @@
 
   @include hover-focus {
     border-color: $color-elephant;
+    outline: none;
 
     &:active {
       background-color: $color-navy-blue;
@@ -164,8 +165,10 @@
     }
   }
 
-  &:disabled {
+  @include disabled {
     opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
   }
 
   @include vp-767 {

@@ -58,12 +58,9 @@
   height: 62px;
   fill: $color-default-white;
 
-  @include hover-focus {
-    fill: $color-resolution-blue;
-
-    &:active {
-      fill: $color-navy-blue;
-    }
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 3px;
   }
 
   @include vp-1199 {
@@ -119,20 +116,43 @@
 }
 
 .main-header__menu li {
+  position: relative;
+
   & a {
     color: $color-default-white;
-  }
 
-  @include hover-focus {
-    & a {
-      color: $color-resolution-blue;
+    @include focus {
+      outline: 1px solid $color-default-white;
+      outline-offset: 3px;
+    }
 
-      &:active {
-        color: $color-navy-blue;
+    @include hover {
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-default-white;
+        height: 1px;
+        left: 0;
+        right: 0;
+        bottom: -3px;
       }
+    }
 
-      &:disabled {
-        background-color: rgba($color-navy-blue, 0.1);
+    @include active {
+      outline: none;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    @include disabled {
+      color: rgba($color-default-black, 0.5);
+      pointer-events: none;
+      cursor: default;
+
+      &::before {
+        display: none;
       }
     }
   }
@@ -145,20 +165,17 @@
   line-height: $lh-xxxsmall;
   align-self: center;
   transform: translateX(-1px) translateY(2px);
+  width: 100%;
+  max-width: 142px;
+  display: flex;
+  flex-wrap: wrap;
 
   & a {
     color: $color-default-white;
 
-    @include hover-focus {
+    @include focus {
       color: $color-resolution-blue;
-
-      &:active {
-        color: $color-navy-blue;
-      }
-
-      &:disabled {
-        background-color: rgba($color-navy-blue, 0.1);
-      }
+      outline: none;
     }
   }
 
@@ -168,6 +185,7 @@
     line-height: $lh-xxsmall;
     z-index: 6;
     transform: translateX(0) translateY(2px);
+    max-width: 126px;
   }
 
   @include vp-767 {
@@ -176,6 +194,7 @@
     position: absolute;
     top: 55px;
     right: 13px;
+    max-width: 110px;
     transform: translateX(-2px) translateY(2px);
   }
 }
@@ -226,5 +245,20 @@
 
   & .main-header__menu.nav {
     top: 0;
+  }
+
+  & .main-header__contact {
+    @include focus {
+      outline: 1px solid $color-elephant;
+      outline-offset: 3px;
+    }
+
+    @include hover {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
   }
 }

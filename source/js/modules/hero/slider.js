@@ -10,6 +10,7 @@ const initHeroSlider = () => {
 
   const heroSlider = new Swiper(heroContainer, {
     allowTouchMove: isMobile(),
+    loop: true,
     speed: 300,
 
     pagination: {

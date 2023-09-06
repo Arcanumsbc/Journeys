@@ -25,6 +25,14 @@
 .hero__item {
   height: auto;
   display: flex;
+
+  &.swiper-slide {
+    visibility: hidden;
+  }
+
+  &.swiper-slide.swiper-slide-active {
+    visibility: visible;
+  }
 }
 
 .hero__bg-photo {
@@ -161,7 +169,6 @@
   line-height: $lh-xxsmall;
   color: $color-default-white;
   width: 220px;
-  max-width: 400px;
   min-height: 58px;
   padding: 21px;
   padding-bottom: 19px;
@@ -178,7 +185,9 @@
 
   @include vp-767 {
     min-height: 52px;
-    width: 180px;
+    min-width: 180px;
+    width: 100%;
+    max-width: 56vw;
     padding: 18px 19px 16px;
   }
 
@@ -188,14 +197,16 @@
     color: $color-resolution-blue;
     outline: none;
 
-    &:active {
+    @include active {
       color: $color-default-white;
       background-color: $color-resolution-blue;
     }
   }
 
-  &:disabled {
+  @include disabled {
     opacity: 0.1;
+    pointer-events: none;
+    cursor: default;
   }
 }
 
@@ -290,22 +301,29 @@
 .hero__slider .hero__control {
   position: absolute;
   margin: 0 auto;
-  max-width: 1200px;
-  right: -6px;
+  width: fit-content;
+  right: calc(50% - 603px);
+  left: auto;
   bottom: 12.1%;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
   column-gap: 6px;
 
+  @include hover-focus {
+    outline: none;
+  }
+
   @include vp-1279 {
     padding: 0 20px;
   }
 
   @include vp-1199 {
+    width: 100%;
     justify-content: center;
+    left: 0;
     bottom: 90px;
-    right: 6px;
+    right: 2px;
   }
 
   @include vp-767 {
@@ -325,7 +343,6 @@
 
   @include hover-focus {
     border-color: $color-resolution-blue;
-    background-color: $color-resolution-blue;
 
     &:active {
       border-color: $color-navy-blue;

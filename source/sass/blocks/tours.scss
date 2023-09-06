@@ -153,7 +153,7 @@
   min-width: 324px;
   width: 100%;
   min-height: 412px;
-  height: 100%;
+  height: auto;
 
   & img {
     width: 100%;
@@ -183,7 +183,7 @@
 .tours__card {
   display: flex;
   flex-direction: column;
-  padding: 0 20px 24px;
+  padding: 24px 20px 24px;
   margin: 0;
   width: 100%;
 
@@ -447,7 +447,7 @@
   position: relative;
   min-width: 230px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 250px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -470,6 +470,10 @@
     stroke-width: 2px;
   }
 
+  @include focus {
+    outline: none;
+  }
+
   @include vp-767 {
     & p {
       font-size: $fz-xsmall;
@@ -487,7 +491,7 @@
       stroke: $color-resolution-blue;
     }
 
-    &:active {
+    @include active {
       & p {
         color: $color-navy-blue;
       }
@@ -498,8 +502,10 @@
     }
   }
 
-  &:disabled {
+  @include disabled {
     opacity: 0.1;
+    pointer-events: none;
+    cursor: default;
 
     & p {
       color: $color-navy-blue;

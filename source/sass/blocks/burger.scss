@@ -1,6 +1,20 @@
 .burger {
   display: none;
 
+  @include focus {
+    outline: none;
+
+    & .burger__open,
+    & .burger__closed {
+      outline: none;
+      fill: $color-resolution-blue;
+
+      @include active {
+        fill: $color-navy-blue;
+      }
+    }
+  }
+
   @include vp-1199 {
     position: relative;
     display: block;
@@ -23,14 +37,6 @@
   fill: $color-default-white;
   transform: translateX(-21%) translateY(-50%);
 
-  @include hover-focus {
-    fill: $color-resolution-blue;
-
-    &:active {
-      fill: $color-navy-blue;
-    }
-  }
-
   @include vp-767 {
     transform: translateX(-21%) translateY(-83%);
   }
@@ -44,19 +50,23 @@
   fill: $color-elephant;
   transform: translateX(5%) translateY(-50%);
 
-  @include hover-focus {
-    fill: $color-resolution-blue;
-
-    &:active {
-      fill: $color-navy-blue;
-    }
-  }
-
   @include vp-1199 {
     transform: translateX(-23%) translateY(-55%);
   }
 
   @include vp-767 {
     transform: translateX(-23%) translateY(-100%);
+  }
+}
+
+.burger__closed,
+.burger__open {
+  @include hover-focus {
+    outline: none;
+    fill: $color-resolution-blue;
+
+    @include active {
+      fill: $color-navy-blue;
+    }
   }
 }

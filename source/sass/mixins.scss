@@ -19,7 +19,13 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &[disabled] {
     @content;
   }
 }

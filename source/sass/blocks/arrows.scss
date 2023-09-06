@@ -13,10 +13,14 @@
   width: 37px;
   height: 35px;
   fill: $color-default-white;
+  outline: none;
 
   & svg {
     width: 14px;
     height: 8px;
+    top: 13px;
+    left: 10px;
+    position: absolute;
   }
 
   @include hover-focus {
@@ -38,6 +42,16 @@
 
   &:disabled {
     opacity: 0.1;
+    cursor: auto;
+
+    @include hover-focus {
+      background-color: $color-navy-blue;
+      border-color: $color-navy-blue;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
   }
 }
 

@@ -182,7 +182,7 @@
 
 .training__process-item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
 
   &::after {
@@ -226,6 +226,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 13px;
   }
 
   &::before {
@@ -242,6 +243,10 @@
   @include vp-1199 {
     &::after {
       background-color: rgba($color-navy-blue, 0.1);
+    }
+
+    svg {
+      bottom: 9px;
     }
 
     &--map {

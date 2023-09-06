@@ -38,12 +38,12 @@
 
   @include vp-1199 {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
   }
 
   @include vp-767 {
     min-width: auto;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 }
 
@@ -126,26 +126,26 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 35px 0;
+  gap: 35px;
 
   @include vp-1199 {
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
-    gap: 0 44px;
+    gap: 44px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    gap: 25px 0;
+    gap: 29px;
   }
 }
 
 .contacts__item {
   position: relative;
   padding-left: 56px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
 
   & svg {
     position: absolute;
@@ -169,10 +169,26 @@
     font-weight: $fw-regular;
     font-size: $fz-xxsmall;
     line-height: $lh-xxmedium;
+
+    @include hover-focus {
+      outline: none;
+      color: $color-resolution-blue;
+
+      @include active {
+        color: $color-navy-blue;
+      }
+    }
+
+    @include disabled {
+      color: rgba($color-elephant, 0.1);
+      pointer-events: none;
+      cursor: default;
+    }
   }
 
   @include vp-1199 {
     padding-left: 34px;
+    min-width: fit-content;
 
     & svg {
       top: 0;
@@ -187,7 +203,8 @@
       padding-bottom: 5px;
     }
 
-    & a {
+    & a,
+    & span {
       font-size: $fz-xsmall;
       line-height: $lh-xsmedium;
     }

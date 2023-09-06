@@ -1,16 +1,28 @@
-const initAudioPlayer = () => {
-  if (document.querySelector('.audio')) {
-    const wrapper = document.querySelector('.audio');
-    const button = wrapper.querySelector('.audio__play');
-    const iframe = `
-    <iframe frameborder="0" style="border:none;width:100%;height:100%;" width="100%" height="100%" src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
-  `;
+const wrapper = document.querySelector('.audio');
+const button = wrapper.querySelector('.audio__play');
+const audioPrew = wrapper.querySelector('[data-audio-prew]');
+const iframe = document.createElement('iframe');
 
-    button.addEventListener('click', () => {
-      wrapper.innerHTML = iframe;
-    }, {once: true});
-  }
-  return null;
+const initAudioPlayer = () => {
+  button.addEventListener('click', () => {
+    audioPrew.classList.add('is-hidden');
+    button.classList.add('is-hidden');
+    iframe.setAttribute('tabindex', '-1');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('style', 'border:none');
+    iframe.setAttribute('width', '340');
+    iframe.setAttribute('heigth', '220');
+    iframe.setAttribute('allow', 'autoplay');
+    iframe.setAttribute('src', 'https://music.yandex.ru/iframe/#track/112912322/25474374?controls=0&autoplay=1');
+    iframe.innerHTML = 'Слушайте 001. Конец фронтенда, одинаковые фреймворки и логические свойства на Яндекс Музыке';
+    wrapper.append(iframe);
+  });
 };
 
-export {initAudioPlayer};
+const stopAudioPlayer = () => {
+  audioPrew.classList.remove('is-hidden');
+  button.classList.remove('is-hidden');
+  iframe.setAttribute('src', '');
+};
+
+export {initAudioPlayer, stopAudioPlayer};

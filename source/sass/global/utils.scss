@@ -7,7 +7,7 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
-  .header,
+  .main-header,
   .footer {
     flex-shrink: 0;
   }
@@ -60,4 +60,9 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.is-hidden {
+  /* stylelint-disable-next-line */
+  display: none !important;
 }

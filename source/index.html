@@ -24,9 +24,9 @@
   <div class="wrapper">
     <!-- header -->
     <header class="main-header" id="top" data-header="data-header">
-      <div class="main-header__container container">
+      <div class="main-header__container container" data-close-menu="data-close-menu">
         <div class="main-header__wrapper">
-          <a class="main-header__logo" href="#top" aria-label="Логотип сайта LifeTour.">
+          <a class="main-header__logo link-second" href="#top" aria-label="Логотип сайта LifeTour.">
             <svg width="205" height="62" aria-hidden="true">
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>
@@ -54,7 +54,7 @@
             </ul>
           </nav>
 
-          <div class="main-header__contact">
+          <div class="main-header__contact link-second">
             <a href="tel:88007253232" aria-label="Позвонить нам">8 800 725 32 32</a>
           </div>
           <button class="main-header__button-menu burger" type="button" data-burger="data-burger"
@@ -87,7 +87,7 @@
                 </div>
                 <div class="hero__media" data-video="is-enabled">
                   <div class="hero__media-wrapper video">
-                    <picture>
+                    <picture data-prew>
                       <source type="image/webp" media="(max-width: 1199px)"
                         srcset="./img/hero/slide_1/hero-video-tablet.webp 1x, ./img/hero/slide_1/hero-video-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="./img/hero/slide_1/hero-video-desk.webp 1x, ./img/hero/slide_1/hero-video-desk@2x.webp 2x">
@@ -198,7 +198,7 @@
                 </div>
                 <div class="hero__media hero__media--altai">
                   <div class="hero__media-wrapper audio">
-                    <picture>
+                    <picture data-audio-prew>
                       <source type="image/webp" srcset="./img/hero/slide_3/hero-audio.webp 1x, ./img/hero/slide_3/hero-audio@2x.webp 2x">
                       <img src="./img/hero/slide_3/hero-audio.jpg" srcset="./img/hero/slide_3/hero-audio@2x.jpg 2x" alt="Звуки гор Алтая" width="340" height="220"
                         loading="lazy">
@@ -241,7 +241,7 @@
               </picture>
             </li>
           </ul>
-          <div class="hero__control swiper-pagination" data-nojs="no-js"></div>
+          <div class="hero__control swiper-pagination" data-nojs="no-js" tabindex="0"></div>
         </div>
       </section>
 
@@ -1196,17 +1196,12 @@
           <div class="form__feedback" data-form-validate="data-form-validate" data-callback="base">
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
-                <div class="form__custom-input" data-validate-type="text" data-limitation="name"
-                  data-message-base="Поле обязательно к заполнению" data-message-extra="Ошибка заполнения поля"
-                  data-required="data-required">
+                <div class="form__custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
                   <label for="user-name"><span class="visually-hidden">Введите ваше имя</span>
                     <input id="user-name" type="text" name="userName" placeholder="Как к вам обращаться?">
                   </label>
                 </div>
-                <div class="form__custom-input" data-validate-type="phone"
-                  data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Ошибка заполнения поля" data-message-success="Поле заполнено верно"
-                  data-required="data-required">
+                <div class="form__custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
                   <label for="user-phone"><span class="visually-hidden">Введите ваше телефон</span>
                     <input id="user-phone" type="tel" name="userPhone" placeholder="Телефон" pattern="[0-9]{1,20}">
                   </label>
@@ -1262,7 +1257,7 @@
                   <use xlink:href="./img/sprite.svg#icon-pin-contact"></use>
                 </svg>
                 <p>Адрес</p>
-                <a href="#" target="_blank" rel="noopener">г. Москва, пр-т Мира, д. 14, офис 101</a>
+                <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
               </li>
             </ul>
           </div>

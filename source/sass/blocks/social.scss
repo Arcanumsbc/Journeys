@@ -12,48 +12,24 @@
   padding: 0;
   display: flex;
   gap: 5px 15px;
-  max-width: 290px;
+  max-width: 120px;
   flex-wrap: wrap;
 }
 
-.social__item {
+.social__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba($color-elephant, 0.3);
-  position: relative;
-
-  & svg {
-    position: absolute;
-    fill: $color-elephant;
-    top: 0;
-    left: 0;
-  }
-
-  &--vk {
-    & svg {
-      top: 10px;
-      left: 6px;
-    }
-  }
-
-  &--ok {
-    & svg {
-      top: 6px;
-      left: 10px;
-    }
-  }
-
-  &--rd {
-    & svg {
-      top: 6px;
-      left: 7px;
-    }
-  }
+  background-color: transparent;
 
   @include hover-focus {
-    border-color: $color-elephant;
+    outline: none;
+    border: 1px solid $color-elephant;
 
-    &:active {
+    @include active {
       background-color: $color-navy-blue;
       border-color: $color-navy-blue;
 
@@ -63,7 +39,9 @@
     }
   }
 
-  &:disabled {
+  @include disabled {
     opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
   }
 }

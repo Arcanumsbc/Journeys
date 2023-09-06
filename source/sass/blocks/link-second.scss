@@ -1,0 +1,27 @@
+.link-second {
+  @include hover-focus {
+    & a {
+      color: $color-resolution-blue;
+    }
+
+    & svg {
+      fill: $color-resolution-blue;
+    }
+
+    @include active {
+      & a {
+        color: $color-navy-blue;
+      }
+
+      & svg {
+        fill: $color-navy-blue;
+      }
+    }
+  }
+
+  @include disabled {
+    opacity: 0.1;
+    pointer-events: none;
+    cursor: default;
+  }
+}

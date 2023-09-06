@@ -10,11 +10,25 @@ const initRewiewsSlider = () => {
   const rewiewsSlider = new Swiper(rewiewsContainer, {
     allowTouchMove: isMobile(),
     slidesPerView: 'auto',
-    autoHeight: true,
+    // autoHeight: true,
     observer: true,
     observeParents: true,
     spaceBetween: 30,
     speed: 300,
+
+    breakpoints: {
+      1200: {
+        autoHeight: false,
+      },
+
+      768: {
+        autoHeight: false,
+      },
+
+      320: {
+        autoHeight: true,
+      },
+    },
 
     navigation: {
       nextEl: '.rewiews__arrows-next',
